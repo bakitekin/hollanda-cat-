@@ -15,7 +15,7 @@ import {
 import { getDictionary } from '../../../../get-dictionary';
 import { Locale } from '../../../../i18n-config';
 
-const HizmetlerimizPage = async ({
+const HizmetlerimizPage = ({
   params: { lang },
 }: {
   params: { lang: Locale };

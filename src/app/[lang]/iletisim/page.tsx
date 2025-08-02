@@ -15,7 +15,7 @@ import {
 import { getDictionary } from '../../../../get-dictionary';
 import { Locale } from '../../../../i18n-config';
 
-const IletisimPage = async ({
+const IletisimPage = ({
   params: { lang },
 }: {
   params: { lang: Locale };

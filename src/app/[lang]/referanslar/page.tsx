@@ -2,7 +2,7 @@ import { Star, Quote, MapPin, Calendar, CheckCircle, UserCircle, Building, Home,
 import { getDictionary } from '../../../../get-dictionary';
 import { Locale } from '../../../../i18n-config';
 
-const ReferanslarPage = async ({
+const ReferanslarPage = ({
   params: { lang },
 }: {
   params: { lang: Locale };

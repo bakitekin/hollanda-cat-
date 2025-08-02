@@ -5,7 +5,7 @@ import { getDictionary } from '../../../get-dictionary';
 import { Locale } from '../../../i18n-config';
 import { MessageCircle, Phone } from 'lucide-react';
 
-const HomePage = async ({
+const HomePage = ({
   params,
 }: {
   params: { lang: string };
