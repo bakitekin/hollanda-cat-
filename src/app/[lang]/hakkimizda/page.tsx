@@ -2,7 +2,6 @@ import {
   Building2, 
   Users, 
   Award, 
-  Globe, 
   Heart,
   Zap,
   Shield,
@@ -17,12 +16,14 @@ import {
 import { getDictionary } from '../../../../get-dictionary';
 import { Locale } from '../../../../i18n-config';
 
+type HakkimizdaPageProps = {
+  params: { lang: Locale };
+};
+
 const HakkimizdaPage = async ({
   params: { lang },
-}: {
-  params: { lang: Locale };
-}) => {
-  const dictionary = getDictionary(lang);
+}: HakkimizdaPageProps) => {
+  const dictionary = await getDictionary(lang);
   const t = dictionary.page.about;
 
   const stats = [
@@ -65,7 +66,7 @@ const HakkimizdaPage = async ({
       role: t.team.founder.role,
       experience: t.team.founder.experience,
       description: t.team.founder.description,
-      emoji: '👨‍💼', // This can be replaced with an icon if available, e.g., <UserCircle />
+      emoji: '👨‍💼',
       phone: '+31 6 29188688'
     },
     {
@@ -73,14 +74,14 @@ const HakkimizdaPage = async ({
       role: t.team.coordinator.role,
       experience: t.team.coordinator.experience,
       description: t.team.coordinator.description,
-      emoji: '👩‍💻' // This can be replaced with an icon, e.g., <Briefcase />
+      emoji: '👩‍💻'
     },
     {
       name: t.team.chief.name,
       role: t.team.chief.role,
       experience: t.team.chief.experience,
       description: t.team.chief.description,
-      emoji: '👷‍♂️' // This can be replaced with an icon, e.g., <HardHat />
+      emoji: '👷‍♂️'
     }
   ];
 
