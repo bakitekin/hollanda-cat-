@@ -15,12 +15,12 @@ import {
 import { getDictionary } from '../../../../get-dictionary';
 import { Locale } from '../../../../i18n-config';
 
-const HizmetlerimizPage = ({
+const HizmetlerimizPage = async ({
   params: { lang },
 }: {
   params: { lang: Locale };
 }) => {
-  const dictionary = getDictionary(lang);
+  const dictionary = await getDictionary(lang);
   const t = dictionary.page.services;
 
   const services = [

@@ -1,12 +1,12 @@
 import type { Locale } from './i18n-config'
-import nl from './dictionaries/nl.json'
-import en from './dictionaries/en.json'
 
+// We enumerate all dictionaries here for better linting and typescript support
+// We also get the default import for cleaner types
 const dictionaries = {
-  nl,
-  en,
+  en: () => import('./dictionaries/en.json').then((module) => module.default),
+  nl: () => import('./dictionaries/nl.json').then((module) => module.default),
 }
 
-export const getDictionary = (locale: Locale) => {
-  return dictionaries[locale] ?? dictionaries.nl
+export const getDictionary = async (locale: Locale) => {
+  return dictionaries[locale]?.() ?? dictionaries.en()
 }

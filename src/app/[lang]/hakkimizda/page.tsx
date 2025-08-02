@@ -20,10 +20,10 @@ type HakkimizdaPageProps = {
   params: { lang: Locale };
 };
 
-const HakkimizdaPage = ({
+const HakkimizdaPage = async ({
   params: { lang },
 }: HakkimizdaPageProps) => {
-  const dictionary = getDictionary(lang);
+  const dictionary = await getDictionary(lang);
   const t = dictionary.page.about;
 
   const stats = [

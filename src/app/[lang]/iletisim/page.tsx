@@ -15,12 +15,12 @@ import {
 import { getDictionary } from '../../../../get-dictionary';
 import { Locale } from '../../../../i18n-config';
 
-const IletisimPage = ({
+const IletisimPage = async ({
   params: { lang },
 }: {
   params: { lang: Locale };
 }) => {
-  const dictionary = getDictionary(lang);
+  const dictionary = await getDictionary(lang);
   const t = dictionary.page.contact;
   
   const phoneNumber = '+31 6 29188688';

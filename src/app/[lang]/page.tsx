@@ -5,13 +5,13 @@ import { getDictionary } from '../../../get-dictionary';
 import { Locale } from '../../../i18n-config';
 import { MessageCircle, Phone } from 'lucide-react';
 
-const HomePage = ({
+const HomePage = async ({
   params,
 }: {
   params: { lang: string };
 }) => {
   const lang = params.lang;
-  const dictionary = getDictionary(lang as Locale);
+  const dictionary = await getDictionary(lang as Locale);
   const t = dictionary.page.home;
 
   const title = t.title.replace(/<1>(.*?)<\/1>/g, '<span class="text-blue-400">$1</span>')
