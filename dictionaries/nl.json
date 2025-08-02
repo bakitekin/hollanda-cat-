@@ -1,0 +1,423 @@
+{
+  "page": {
+    "home": {
+      "title": "Betrouwbare en <1>Professionele</1> Dakoplossingen in <2>Nederland</2>",
+      "description": "Bij BRK DAK bieden we duurzame en esthetische dakdiensten die voldoen aan de strenge Nederlandse klimaateisen en bouwnormen. Met onze ervaring, hoogwaardige materialen en klantgerichte aanpak is uw dak in veilige handen.",
+      "whatsapp_button": "Contact via WhatsApp",
+      "call_button": "Bel Nu"
+    },
+    "about": {
+      "hero": {
+        "title": "Het Verhaal van BRK DAK",
+        "subtitle": "Sinds 2018 zijn wij een betrouwbare partner voor dakdiensten in Nederland en bieden we duizenden gezinnen veilige en comfortabele woonruimtes.",
+        "location": "Amsterdam, Nederland"
+      },
+      "stats": {
+        "projects": { "number": "500+", "label": "Voltooide Projecten" },
+        "experience": { "number": "6+", "label": "Jaar Ervaring" },
+        "satisfaction": { "number": "98%", "label": "Klanttevredenheid" },
+        "support": { "number": "24/7", "label": "Ondersteuning" }
+      },
+      "mission_vision": {
+        "mission": {
+          "title": "Onze Missie",
+          "description": "Ervoor zorgen dat elk gezin in Nederland onder een veilig en comfortabel dak woont. De levenskwaliteit van onze klanten verbeteren door milieuvriendelijke en duurzame dakoplossingen van de hoogste kwaliteit aan te bieden."
+        },
+        "vision": {
+          "title": "Onze Visie",
+          "description": "Het meest betrouwbare en innovatieve dakdekkersbedrijf van Nederland zijn. De leefruimtes van de toekomst vormgeven met duurzame en slimme daksystemen door technologische ontwikkelingen te volgen."
+        }
+      },
+      "values": {
+        "title": "Onze Waarden",
+        "subtitle": "Onze werkprincipes en waarden",
+        "reliability": {
+          "title": "Betrouwbaarheid",
+          "description": "Bij elk project hanteren we de hoogste kwaliteitsnormen, komen we onze beloften na en winnen we het vertrouwen van onze klanten."
+        },
+        "quality": {
+          "title": "Kwaliteit",
+          "description": "We gebruiken uitsluitend hoogwaardige materialen, doen geen concessies aan ons vakmanschap en streven naar perfectie."
+        },
+        "customer_focus": {
+          "title": "Klantgerichtheid",
+          "description": "We luisteren naar de behoeften van onze klanten en ontwikkelen op maat gemaakte oplossingen door hun verwachtingen te begrijpen."
+        },
+        "innovation": {
+          "title": "Innovatie",
+          "description": "We volgen de innovaties in de sector en bieden moderne oplossingen met de nieuwste technologieën."
+        }
+      },
+      "team": {
+        "title": "Ons Deskundig Team",
+        "subtitle": "Ons ervaren en deskundige personeel",
+        "founder": {
+          "name": "Burak Uğur",
+          "role": "Oprichter & CEO",
+          "experience": "6+ Jaar Ervaring",
+          "description": "Oprichter van BRK DAK. Een expert in de Nederlandse dakindustrie, die een leidende rol speelt in het succes van het bedrijf met zijn klantgerichte aanpak."
+        },
+        "coordinator": {
+          "name": "Fatma Kaya",
+          "role": "Projectcoördinator",
+          "experience": "12+ Jaar Ervaring",
+          "description": "Expert in klantrelaties en projectmanagement."
+        },
+        "chief": {
+          "name": "Ahmet Demir",
+          "role": "Technisch Hoofd",
+          "experience": "15+ Jaar Ervaring",
+          "description": "Expert in daksystemen en isolatietechnologieën."
+        }
+      },
+      "cta": {
+        "title": "Klaar om met ons te werken?",
+        "subtitle": "Wij bieden oplossingen voor uw dakbehoeften met onze 6 jaar ervaring en deskundig personeel.",
+        "button": "Neem Contact Op" 
+      }
+    },
+    "services": {
+      "hero": {
+        "title": "Professionele Dakdiensten",
+        "subtitle": "Houd uw huis veilig met moderne en duurzame dakoplossingen die geschikt zijn voor de strenge Nederlandse klimaatomstandigheden."
+      },
+      "why_choose_us": {
+        "projects": "500+ Succesvolle Projecten",
+        "emergency": "24/7 Spoedservice",
+        "team": "Deskundig Team",
+        "satisfaction": "98% Klanttevredenheid"
+      },
+      "grid": {
+        "title": "Voor Al Uw Dakbehoeften",
+        "subtitle": "Met kwaliteitsmaterialen en vakkundig vakmanschap",
+        "button_text": "Vraag een Gratis Offerte Aan"
+      },
+      "service_list": {
+        "new_roof": {
+          "title": "Nieuwbouw Dak",
+          "description": "Wij bouwen esthetische en duurzame daken die bestand zijn tegen de strenge Nederlandse klimaatomstandigheden, met een moderne architectonische benadering.",
+          "features": ["20+ Jaar Garantie", "Premium Materialen", "Snelle Installatie", "3D Ontwerp"]
+        },
+        "repair": {
+          "title": "Dak Reparatie en Onderhoud",
+          "description": "24/7 spoedservice voor waterlekken, stormschade, gebroken pannen en allerlei dakproblemen.",
+          "features": ["24/7 Spoedservice", "Gratis Inspectie", "Snelle Oplossing", "Verzekeringsondersteuning"]
+        },
+        "insulation": {
+          "title": "Dakisolatie",
+          "description": "Professionele isolatieoplossingen die de energie-efficiëntie verhogen en uw stookkosten tot 40% verlagen.",
+          "features": ["40% Energiebesparing", "Milieuvriendelijk", "Geluidsisolatie", "Ademend Systeem"]
+        },
+        "waterproofing": {
+          "title": "Waterdichting",
+          "description": "Professionele waterdichtingssystemen die uw dak jarenlang beschermen tegen vocht en waterschade.",
+          "features": ["15 Jaar Garantie", "Waterdicht", "UV-bescherming", "Flexibel Membraan"]
+        },
+        "gutters": {
+          "title": "Dakgootsystemen",
+          "description": "Installatie, reiniging en onderhoud van moderne dakgootsystemen voor een veilige afvoer van regenwater.",
+          "features": ["Roestvrij Staal", "Verstoppingsvrij Systeem", "Esthetisch Ontwerp", "Eenvoudig Onderhoud"]
+        },
+        "green_roof": {
+          "title": "Groendaksystemen",
+          "description": "Groendaktoepassingen voor duurzaam wonen. Milieuvriendelijke, esthetische en moderne oplossingen.",
+          "features": ["Duurzaam", "Esthetisch", "Luchtkwaliteit", "Energiebesparing"]
+        }
+      },
+      "cta": {
+        "title": "Heeft u een dakprobleem?",
+        "subtitle": "Ons deskundige team biedt de meest geschikte oplossing met een gratis inspectie.",
+        "call_button": "Bel Nu: +31 6 29188688",
+        "quote_button": "Vraag Online een Offerte Aan"
+      }
+    },
+    "references": {
+      "hero": {
+        "title": "Klantreferenties",
+        "subtitle": "Meningen van onze tevreden klanten en succesvol afgeronde projecten"
+      },
+      "stats": [
+        { "number": "500+", "label": "Tevreden Klanten" },
+        { "number": "98%", "label": "Tevredenheidsgraad" },
+        { "number": "4.9/5", "label": "Gemiddelde Beoordeling" },
+        { "number": "0", "label": "Klachten" }
+      ],
+      "testimonials_section": {
+        "title": "Klantbeoordelingen",
+        "subtitle": "Beoordelingen van onze echte klanten"
+      },
+      "testimonials": [
+        {
+          "id": 1,
+          "name": "Maria van der Berg",
+          "location": "Amsterdam",
+          "rating": 5,
+          "date": "December 2024",
+          "service": "Dak Reparatie",
+          "comment": "Het team van BRK.DAK heeft het waterlekprobleem op mijn dak zeer snel opgelost. Bedankt voor hun professionele aanpak en kwalitatief vakmanschap.",
+          "avatar": ""
+        },
+        {
+          "id": 2,
+          "name": "Jan Koevoets",
+          "location": "Rotterdam",
+          "rating": 5,
+          "date": "November 2024",
+          "service": "Nieuwbouw Dak",
+          "comment": "We hebben het dak van ons huis volledig laten vernieuwen. Tijdige levering, schoon werk en uitstekende resultaten. Ik raad ze zeker aan.",
+          "avatar": ""
+        },
+        {
+          "id": 3,
+          "name": "Sarah Johnson",
+          "location": "Amsterdam",
+          "rating": 5,
+          "date": "Oktober 2024",
+          "service": "Dakisolatie",
+          "comment": "Mijn stookkosten zijn na de isolatiewerkzaamheden gehalveerd. Het is zowel een milieuvriendelijke als een economische oplossing.",
+          "avatar": ""
+        },
+        {
+          "id": 4,
+          "name": "Piet Janssen",
+          "location": "Den Haag",
+          "rating": 5,
+          "date": "September 2024",
+          "service": "Dakgootsystemen",
+          "comment": "De 24/7 spoedservice bestaat echt. Ze hadden het probleem dat midden in de nacht was ontstaan 's ochtends opgelost. Geweldige service!",
+          "avatar": ""
+        },
+        {
+          "id": 5,
+          "name": "Lisa van Dijk",
+          "location": "Rotterdam",
+          "rating": 5,
+          "date": "Augustus 2024",
+          "service": "Waterdichting",
+          "comment": "Ze hebben een zeer gedetailleerde inspectie uitgevoerd en het hele proces stap voor stap uitgelegd. Transparante prijzen en hoogwaardige materialen.",
+          "avatar": ""
+        },
+        {
+          "id": 6,
+          "name": "Mohamed Al-Rashid",
+          "location": "Den Haag",
+          "rating": 5,
+          "date": "Juli 2024",
+          "service": "Groendak",
+          "comment": "We hebben een groendak laten aanleggen voor duurzaam wonen. Het is zowel esthetisch als milieuvriendelijk. Uitstekend projectmanagement.",
+          "avatar": ""
+        }
+      ],
+      "projects_section": {
+        "title": "Uitgelichte Projecten",
+        "subtitle": "Speciale projecten die we met succes hebben afgerond"
+      },
+      "projects": [
+        {
+          "title": "Moderne Villa Dakrenovatie",
+          "location": "Amsterdam Noord",
+          "year": "2024",
+          "description": "Volledige renovatie van een 300m² villadak",
+          "features": ["Premium Pannen", "Slimme Isolatie", "Zonnepaneel Voorbereiding"],
+          "image": ""
+        },
+        {
+          "title": "Appartementencomplex Waterdichting",
+          "location": "Rotterdam Centrum",
+          "year": "2024",
+          "description": "Waterdichtingsproject voor een appartementencomplex met 12 woningen",
+          "features": ["EPDM Membraan", "15 Jaar Garantie", "Snelle Installatie"],
+          "image": ""
+        },
+        {
+          "title": "Restauratie Historisch Pand",
+          "location": "Utrecht Binnenstad",
+          "year": "2023",
+          "description": "Dakrestauratie van een 19e-eeuws historisch pand",
+          "features": ["Authentieke Materialen", "Goedgekeurd door Monumentenzorg", "Speciale Technieken"],
+          "image": ""
+        }
+      ],
+      "trust_section": {
+        "title": "Vertrouwensindicatoren"
+      },
+      "trust_indicators": [
+        { "icon": "", "title": "Industrieleider", "subtitle": "15+ jaar ervaring" },
+        { "icon": "", "title": "Verzekerd", "subtitle": "Volledige verzekeringsdekking" },
+        { "icon": "", "title": "Gecertificeerd", "subtitle": "Officiële certificeringen" },
+        { "icon": "", "title": "Snelle Service", "subtitle": "24/7 ondersteuning" }
+      ],
+      "cta": {
+        "title": "Sluit u aan bij onze Tevreden Klanten",
+        "subtitle": "Neem vandaag nog contact met ons op voor een gratis inspectie en offerte",
+        "button": "Vraag nu een Offerte aan"
+      }
+    },
+    "contact": {
+      "hero": {
+        "title": "Contact",
+        "subtitle": "Wij staan 24/7 voor u klaar voor uw dakbehoeften"
+      },
+      "owner_highlight": {
+        "name": "Burak Uğur",
+        "role": "Oprichter & CEO",
+        "experience": "Persoonlijke service met 6+ jaar ervaring",
+        "call_button_subtext": "Direct bellen",
+        "whatsapp_button_text": "WhatsApp Bericht",
+        "whatsapp_button_subtext": "Direct antwoord gegarandeerd",
+        "whatsapp_message": "Hallo Burak! Ik wil graag informatie over de dakdiensten van BRK DAK."
+      },
+      "contact_methods": [
+        {
+          "icon": "Phone",
+          "title": "Telefoon",
+          "subtitle": "Directe communicatie",
+          "link": "tel:+31629188688",
+          "link_text": "+31 6 29188688",
+          "color": "from-blue-500 to-blue-700",
+          "link_color": "text-blue-400"
+        },
+        {
+          "icon": "MessageCircle",
+          "title": "WhatsApp",
+          "subtitle": "Snelle berichten",
+          "link": "https://wa.me/31629188688",
+          "link_text": "Bericht Sturen",
+          "color": "from-green-500 to-green-700",
+          "link_color": "text-green-400"
+        },
+        {
+          "icon": "Mail",
+          "title": "E-mail",
+          "subtitle": "Gedetailleerde informatie",
+          "link": "mailto:brkdak.nl@gmail.com",
+          "link_text": "brkdak.nl@gmail.com",
+          "color": "from-purple-500 to-purple-700",
+          "link_color": "text-purple-400"
+        },
+        {
+          "icon": "Clock",
+          "title": "Werktijden",
+          "subtitle": "Ma - Vr: 08:00-18:00\nZa: 09:00-16:00",
+          "link": "#",
+          "link_text": "Spoed: 24/7",
+          "color": "from-yellow-500 to-yellow-700",
+          "link_color": "text-yellow-400 font-semibold"
+        }
+      ],
+      "service_areas": {
+        "title": "Onze Servicegebieden",
+        "subtitle": "Kwalitatieve dakdiensten in heel Nederland",
+        "cities": [
+          "Amsterdam", "Rotterdam", "Den Haag"
+        ],
+        "footer_text_part1": "Woont u in een niet-vermelde regio?",
+        "footer_text_part2": "Bel ons!"
+      },
+      "emergency": {
+        "title": "Spoeddiensten",
+        "subtitle": "Heeft u een waterlek, stormschade of een spoedreparatie aan uw dak nodig?<br />Binnen 24 uur een oplossing ter plaatse gegarandeerd!",
+        "steps": [
+          { "icon": "", "title": "Directe Reactie", "description": "Binnen 2 uur ter plaatse" },
+          { "icon": "", "title": "Tijdelijke Oplossing", "description": "Wij stoppen de schade" },
+          { "icon": "", "title": "Permanente Reparatie", "description": "Binnen 24 uur voltooid" }
+        ],
+        "button_text": "SPOEDOPROEP:"
+      },
+      "why_choose_us": {
+        "title": "Waarom BRK DAK?",
+        "subtitle": "U zult ons verschil ook in de communicatie voelen",
+        "reasons": [
+          {
+            "icon": "CheckCircle",
+            "title": "Direct Antwoord",
+            "description": "Uw WhatsApp- en telefoongesprekken worden binnen 5 minuten beantwoord",
+            "color": "from-green-500 to-green-700"
+          },
+          {
+            "icon": "User",
+            "title": "Persoonlijke Aandacht",
+            "description": "U kunt rechtstreeks spreken met de oprichter, Burak Uğur",
+            "color": "from-blue-500 to-blue-700"
+          },
+          {
+            "icon": "Clock",
+            "title": "24/7 Bereikbaarheid",
+            "description": "Voor noodgevallen kunt u ons altijd bereiken",
+            "color": "from-purple-500 to-purple-700"
+          },
+          {
+            "icon": "MapPin",
+            "title": "Lokale Service",
+            "description": "Snel en betrouwbaar transport door heel Nederland",
+            "color": "from-yellow-500 to-yellow-700"
+          }
+        ]
+      }
+    }
+  },
+  "components": {
+    "featured_services": {
+      "title": "Uitgelichte Diensten",
+      "description": "Wij bieden professionele dakdiensten in heel Nederland",
+      "services": [
+        {
+          "title": "Nieuwbouw Dak",
+          "description": "Wij bouwen esthetische en duurzame nieuwe daken met moderne en sterke materialen."
+        },
+        {
+          "title": "Dak Reparatie & Onderhoud",
+          "description": "Snelle en effectieve oplossingen voor allerlei problemen, van lekkages tot stormschade."
+        },
+        {
+          "title": "Dakisolatie",
+          "description": "Professionele isolatiediensten die uw stookkosten verlagen door de energie-efficiëntie te verhogen."
+        }
+      ],
+      "button_text": "Bekijk Details"
+    },
+    "why_choose_us": {
+      "title": "Waarom Voor Ons Kiezen?",
+      "description": "Wij maken het verschil met onze professionele aanpak die klanttevredenheid vooropstelt",
+      "reasons": [
+        {
+          "title": "Kwaliteitsmaterialen",
+          "description": "We gebruiken alleen gecertificeerde materialen van de hoogste kwaliteit die voldoen aan de Nederlandse normen."
+        },
+        {
+          "title": "Deskundig Team",
+          "description": "Met onze ervaren en getrainde vakmensen leveren wij perfect vakmanschap bij elk project."
+        },
+        {
+          "title": "Tijdige Oplevering",
+          "description": "We houden ons aan de projectplanning en leveren ons werk op de afgesproken tijd volledig op."
+        }
+      ]
+    },
+    "header": {
+      "slogan": "De Dakexperts",
+      "nav": {
+        "services": "Diensten",
+        "about": "Over Ons",
+        "references": "Referenties",
+        "contact": "Contact"
+      },
+      "call_button": "Bel Nu",
+      "call_button_mobile": "Bel"
+    },
+    "whatsapp_button": {
+      "title": "Contact Opties",
+      "owner": "Burak Uğur - Oprichter",
+      "whatsapp_button": "WhatsApp Bericht",
+      "call_button": "Telefoongesprek",
+      "emergency_service": "24/7 Spoedservice"
+    },
+    "footer": {
+      "rights_reserved": "Alle rechten voorbehouden.",
+      "developed_by": "Ontwerp & Ontwikkeling door",
+      "quick_links": "Snelle Links",
+      "contact_us": "Neem Contact Op",
+      "follow_us": "Volg Ons"
+    }
+  }
+}

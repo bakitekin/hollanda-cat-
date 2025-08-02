@@ -1,0 +1,423 @@
+{
+  "page": {
+    "home": {
+      "title": "Reliable and Professional Roofing Solutions in the Netherlands",
+      "description": "As BRK DAK, we offer long-lasting and aesthetic roofing services that comply with the harsh climate conditions and high construction standards of the Netherlands. With our experience, use of quality materials, and customer satisfaction-oriented approach, your roof is in safe hands.",
+      "whatsapp_button": "Contact via WhatsApp",
+      "call_button": "Call Now"
+    },
+    "about": {
+      "hero": {
+        "title": "The BRK DAK Story",
+        "subtitle": "As a reliable partner in the roofing services field in the Netherlands since 2018, we provide safe and comfortable living spaces for thousands of families.",
+        "location": "Amsterdam, Netherlands"
+      },
+      "stats": {
+        "projects": { "number": "500+", "label": "Completed Projects" },
+        "experience": { "number": "6+", "label": "Years of Experience" },
+        "satisfaction": { "number": "98%", "label": "Customer Satisfaction" },
+        "support": { "number": "24/7", "label": "Support Service" }
+      },
+      "mission_vision": {
+        "mission": {
+          "title": "Our Mission",
+          "description": "To ensure every family in the Netherlands lives under a safe and comfortable roof. To enhance our customers' quality of life by offering environmentally friendly and sustainable roofing solutions at the highest quality standards."
+        },
+        "vision": {
+          "title": "Our Vision",
+          "description": "To be the most reliable and innovative roofing services company in the Netherlands. To shape the living spaces of the future with sustainable and smart roofing systems by following technological developments."
+        }
+      },
+      "values": {
+        "title": "Our Values",
+        "subtitle": "Our working principles and values",
+        "reliability": {
+          "title": "Reliability",
+          "description": "We apply the highest quality standards in every project, keep our promises, and earn the trust of our customers."
+        },
+        "quality": {
+          "title": "Quality",
+          "description": "We use only premium materials, make no compromises in our workmanship, and aim for excellence."
+        },
+        "customer_focus": {
+          "title": "Customer Focus",
+          "description": "We listen to our customers' needs and produce special solutions by understanding their expectations."
+        },
+        "innovation": {
+          "title": "Innovation",
+          "description": "We follow innovations in the sector and offer modern solutions with the latest technologies."
+        }
+      },
+      "team": {
+        "title": "Our Expert Team",
+        "subtitle": "Our experienced and expert staff",
+        "founder": {
+          "name": "Burak Uğur",
+          "role": "Founder & CEO",
+          "experience": "6+ Years of Experience",
+          "description": "Founder of BRK DAK. An expert in the Dutch roofing industry, playing a leading role in the company's success with his customer satisfaction-oriented approach."
+        },
+        "coordinator": {
+          "name": "Fatma Kaya",
+          "role": "Project Coordinator",
+          "experience": "12+ Years of Experience",
+          "description": "Expert in customer relations and project management."
+        },
+        "chief": {
+          "name": "Ahmet Demir",
+          "role": "Technical Chief",
+          "experience": "15+ Years of Experience",
+          "description": "Expert in roofing systems and insulation technologies."
+        }
+      },
+      "cta": {
+        "title": "Ready to Work With Us?",
+        "subtitle": "We provide solutions for your roofing needs with our 6 years of experience and expert staff.",
+        "button": "Get in Touch"
+      }
+    },
+    "services": {
+      "hero": {
+        "title": "Professional Roofing Services",
+        "subtitle": "Keep your home safe with modern and durable roofing solutions suitable for the harsh climate conditions of the Netherlands."
+      },
+      "why_choose_us": {
+        "projects": "500+ Successful Projects",
+        "emergency": "24/7 Emergency Service",
+        "team": "Expert Team",
+        "satisfaction": "98% Customer Satisfaction"
+      },
+      "grid": {
+        "title": "For All Your Roofing Needs",
+        "subtitle": "With quality materials and expert craftsmanship",
+        "button_text": "Get a Free Quote"
+      },
+      "service_list": {
+        "new_roof": {
+          "title": "New Roof Construction",
+          "description": "We build aesthetic and long-lasting roofs resistant to the harsh climate conditions of the Netherlands with a modern architectural approach.",
+          "features": ["20+ Year Warranty", "Premium Materials", "Fast Installation", "3D Design"]
+        },
+        "repair": {
+          "title": "Roof Repair and Maintenance",
+          "description": "24/7 emergency response service for water leaks, storm damage, broken tiles, and all kinds of roof problems.",
+          "features": ["24/7 Emergency Service", "Free Survey", "Quick Solution", "Insurance Support"]
+        },
+        "insulation": {
+          "title": "Roof Insulation",
+          "description": "Professional insulation solutions that increase energy efficiency and reduce your heating costs by up to 40%.",
+          "features": ["40% Energy Savings", "Eco-Friendly", "Sound Insulation", "Breathable System"]
+        },
+        "waterproofing": {
+          "title": "Waterproofing",
+          "description": "Professional waterproofing systems that will protect your roof from moisture and water damage for many years.",
+          "features": ["15-Year Warranty", "Waterproof", "UV Protection", "Flexible Membrane"]
+        },
+        "gutters": {
+          "title": "Gutter Systems",
+          "description": "Installation, cleaning, and maintenance of modern gutter systems for safe rainwater drainage.",
+          "features": ["Stainless Steel", "Clog-Free System", "Aesthetic Design", "Easy Maintenance"]
+        },
+        "green_roof": {
+          "title": "Green Roof Systems",
+          "description": "Green roof applications for sustainable living. Environmentally friendly, aesthetic, and modern solutions.",
+          "features": ["Sustainable", "Aesthetic", "Air Quality", "Energy Savings"]
+        }
+      },
+      "cta": {
+        "title": "Have a Roof Problem?",
+        "subtitle": "Our expert team provides the most suitable solution with a free survey.",
+        "call_button": "Call Now: +31 6 29188688",
+        "quote_button": "Get an Online Quote"
+      }
+    },
+    "references": {
+      "hero": {
+        "title": "Customer References",
+        "subtitle": "Opinions of our satisfied customers and successfully completed projects"
+      },
+      "stats": [
+        { "number": "500+", "label": "Happy Customers" },
+        { "number": "98%", "label": "Satisfaction Rate" },
+        { "number": "4.9/5", "label": "Average Rating" },
+        { "number": "0", "label": "Complaints" }
+      ],
+      "testimonials_section": {
+        "title": "Customer Reviews",
+        "subtitle": "Reviews from our real customers"
+      },
+      "testimonials": [
+        {
+          "id": 1,
+          "name": "Maria van der Berg",
+          "location": "Amsterdam",
+          "rating": 5,
+          "date": "December 2024",
+          "service": "Roof Repair",
+          "comment": "The BRK.DAK team solved the water leak problem on my roof very quickly. Thanks for their professional approach and quality workmanship.",
+          "avatar": ""
+        },
+        {
+          "id": 2,
+          "name": "Jan Koevoets",
+          "location": "Rotterdam",
+          "rating": 5,
+          "date": "November 2024",
+          "service": "New Roof Construction",
+          "comment": "We had our house's roof completely redone. Timely delivery, clean work, and excellent results. I definitely recommend them.",
+          "avatar": ""
+        },
+        {
+          "id": 3,
+          "name": "Sarah Johnson",
+          "location": "Amsterdam",
+          "rating": 5,
+          "date": "October 2024",
+          "service": "Roof Insulation",
+          "comment": "My heating bills were cut in half after the insulation work. It's both an eco-friendly and economical solution.",
+          "avatar": ""
+        },
+        {
+          "id": 4,
+          "name": "Piet Janssen",
+          "location": "Den Haag",
+          "rating": 5,
+          "date": "September 2024",
+          "service": "Gutter Systems",
+          "comment": "The 24/7 emergency service really exists. They had solved the problem that occurred in the middle of the night by the morning. Great service!",
+          "avatar": ""
+        },
+        {
+          "id": 5,
+          "name": "Lisa van Dijk",
+          "location": "Rotterdam",
+          "rating": 5,
+          "date": "August 2024",
+          "service": "Waterproofing",
+          "comment": "They did a very detailed survey and explained the whole process step by step. Transparent pricing and quality materials.",
+          "avatar": ""
+        },
+        {
+          "id": 6,
+          "name": "Mohamed Al-Rashid",
+          "location": "Den Haag",
+          "rating": 5,
+          "date": "July 2024",
+          "service": "Green Roof",
+          "comment": "We had a green roof installed for sustainable living. It's both aesthetic and eco-friendly. Excellent project management.",
+          "avatar": ""
+        }
+      ],
+      "projects_section": {
+        "title": "Featured Projects",
+        "subtitle": "Special projects we have successfully completed"
+      },
+      "projects": [
+        {
+          "title": "Modern Villa Roof Renovation",
+          "location": "Amsterdam Noord",
+          "year": "2024",
+          "description": "Complete renovation of a 300m² villa roof",
+          "features": ["Premium Tiles", "Smart Insulation", "Solar Panel Ready"],
+          "image": ""
+        },
+        {
+          "title": "Apartment Complex Waterproofing",
+          "location": "Rotterdam Centrum",
+          "year": "2024",
+          "description": "Waterproofing project for a 12-apartment complex",
+          "features": ["EPDM Membrane", "15-Year Warranty", "Fast Installation"],
+          "image": ""
+        },
+        {
+          "title": "Historic Building Restoration",
+          "location": "Utrecht Binnenstad",
+          "year": "2023",
+          "description": "Roof restoration of a 19th-century historic building",
+          "features": ["Authentic Materials", "Conservation Board Approved", "Special Techniques"],
+          "image": ""
+        }
+      ],
+      "trust_section": {
+        "title": "Trust Indicators"
+      },
+      "trust_indicators": [
+        { "icon": "", "title": "Industry Leader", "subtitle": "15+ years of experience" },
+        { "icon": "", "title": "Insured", "subtitle": "Full insurance coverage" },
+        { "icon": "", "title": "Certified", "subtitle": "Official certifications" },
+        { "icon": "", "title": "Fast Service", "subtitle": "24/7 support" }
+      ],
+      "cta": {
+        "title": "Join Our Satisfied Customers",
+        "subtitle": "Contact us today for a free survey and quote",
+        "button": "Get a Quote Now"
+      }
+    },
+    "contact": {
+      "hero": {
+        "title": "Contact",
+        "subtitle": "We are ready to serve you 24/7 for your roofing needs"
+      },
+      "owner_highlight": {
+        "name": "Burak Uğur",
+        "role": "Founder & CEO",
+        "experience": "Personal service with 6+ years of experience",
+        "call_button_subtext": "Direct phone call",
+        "whatsapp_button_text": "WhatsApp Message",
+        "whatsapp_button_subtext": "Instant response guaranteed",
+        "whatsapp_message": "Hello Burak! I would like to get information about BRK DAK roofing services."
+      },
+      "contact_methods": [
+        {
+          "icon": "Phone",
+          "title": "Phone",
+          "subtitle": "Instant communication",
+          "link": "tel:+31629188688",
+          "link_text": "+31 6 29188688",
+          "color": "from-blue-500 to-blue-700",
+          "link_color": "text-blue-400"
+        },
+        {
+          "icon": "MessageCircle",
+          "title": "WhatsApp",
+          "subtitle": "Fast messaging",
+          "link": "https://wa.me/31629188688",
+          "link_text": "Send Message",
+          "color": "from-green-500 to-green-700",
+          "link_color": "text-green-400"
+        },
+        {
+          "icon": "Mail",
+          "title": "E-mail",
+          "subtitle": "Detailed information",
+          "link": "mailto:brkdak.nl@gmail.com",
+          "link_text": "brkdak.nl@gmail.com",
+          "color": "from-purple-500 to-purple-700",
+          "link_color": "text-purple-400"
+        },
+        {
+          "icon": "Clock",
+          "title": "Working Hours",
+          "subtitle": "Mon - Fri: 08:00-18:00\nSat: 09:00-16:00",
+          "link": "#",
+          "link_text": "Emergency: 24/7",
+          "color": "from-yellow-500 to-yellow-700",
+          "link_color": "text-yellow-400 font-semibold"
+        }
+      ],
+      "service_areas": {
+        "title": "Our Service Areas",
+        "subtitle": "Quality roofing services throughout the Netherlands",
+        "cities": [
+          "Amsterdam", "Rotterdam", "Den Haag"
+        ],
+        "footer_text_part1": "Living in an unlisted area?",
+        "footer_text_part2": "Call us!"
+      },
+      "emergency": {
+        "title": "Emergency Services",
+        "subtitle": "Need a water leak, storm damage, or emergency roof repair?<br />On-site solution guaranteed within 24 hours!",
+        "steps": [
+          { "icon": "", "title": "Instant Response", "description": "On-site within 2 hours" },
+          { "icon": "", "title": "Temporary Solution", "description": "We stop the damage" },
+          { "icon": "", "title": "Permanent Repair", "description": "We complete it within 24 hours" }
+        ],
+        "button_text": "EMERGENCY CALL:"
+      },
+      "why_choose_us": {
+        "title": "Why BRK DAK?",
+        "subtitle": "You will also feel our difference in communication",
+        "reasons": [
+          {
+            "icon": "CheckCircle",
+            "title": "Instant Response",
+            "description": "Your WhatsApp and phone calls are answered within 5 minutes",
+            "color": "from-green-500 to-green-700"
+          },
+          {
+            "icon": "User",
+            "title": "Personal Attention",
+            "description": "You can speak directly with the founder, Burak Uğur",
+            "color": "from-blue-500 to-blue-700"
+          },
+          {
+            "icon": "Clock",
+            "title": "24/7 Access",
+            "description": "You can always reach us for emergencies",
+            "color": "from-purple-500 to-purple-700"
+          },
+          {
+            "icon": "MapPin",
+            "title": "Local Service",
+            "description": "Fast and reliable transportation throughout the Netherlands",
+            "color": "from-yellow-500 to-yellow-700"
+          }
+        ]
+      }
+    }
+  },
+  "components": {
+    "featured_services": {
+      "title": "Our Featured Services",
+      "description": "We offer professional roofing services in all regions of the Netherlands",
+      "services": [
+        {
+          "title": "New Roof Construction",
+          "description": "We build aesthetic and long-lasting new roofs with modern and durable materials."
+        },
+        {
+          "title": "Roof Repair and Maintenance",
+          "description": "We provide fast and effective solutions for all kinds of problems, from leaks to storm damage."
+        },
+        {
+          "title": "Roof Insulation",
+          "description": "Professional insulation services that increase energy efficiency and reduce your heating costs."
+        }
+      ],
+      "button_text": "View Details"
+    },
+    "why_choose_us": {
+      "title": "Why Choose Us?",
+      "description": "We make a difference with our professional approach that prioritizes customer satisfaction",
+      "reasons": [
+        {
+          "title": "Quality Materials",
+          "description": "We only use certified, high-quality materials that comply with Dutch standards."
+        },
+        {
+          "title": "Expert Team",
+          "description": "We offer excellent craftsmanship in every project with our experienced and trained craftsmen."
+        },
+        {
+          "title": "Timely Delivery",
+          "description": "We adhere to the project schedule and deliver our work completely on the agreed-upon time."
+        }
+      ]
+    },
+    "header": {
+      "slogan": "Roofing Experts",
+      "nav": {
+        "services": "Services",
+        "about": "About Us",
+        "references": "References",
+        "contact": "Contact"
+      },
+      "call_button": "Call Now",
+      "call_button_mobile": "Call"
+    },
+    "whatsapp_button": {
+      "title": "Contact Options",
+      "owner": "Burak Uğur - Founder",
+      "whatsapp_button": "WhatsApp Message",
+      "call_button": "Call Phone",
+      "emergency_service": "24/7 Emergency Service"
+    },
+    "footer": {
+      "rights_reserved": "All rights reserved.",
+      "developed_by": "Designed & Developed by",
+      "quick_links": "Quick Links",
+      "contact_us": "Contact Us",
+      "follow_us": "Follow Us"
+    }
+  }
+}
