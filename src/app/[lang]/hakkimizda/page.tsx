@@ -21,8 +21,8 @@ type HakkimizdaPageProps = {
   params: { lang: Locale };
 };
 
-const HakkimizdaPage = async (props: HakkimizdaPageProps) => {
-  const lang = props.params.lang;
+const HakkimizdaPage = async ({ params }: HakkimizdaPageProps) => {
+  const { lang } = params;
   const dictionary = await getDictionary(lang);
   const t = dictionary.page.about;
 

@@ -16,8 +16,12 @@ import {
 import { getDictionary } from '../../../../get-dictionary';
 import { Locale } from '../../../../i18n-config';
 
-const HizmetlerimizPage = async (props: { params: { lang: Locale } }) => {
-  const lang = props.params.lang;
+const HizmetlerimizPage = async ({
+  params,
+}: {
+  params: { lang: Locale };
+}) => {
+  const { lang } = params;
   const dictionary = await getDictionary(lang);
   const t = dictionary.page.services;
 
