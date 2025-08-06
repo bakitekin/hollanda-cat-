@@ -12,8 +12,8 @@ const reasonIcons: { [key: string]: React.ElementType } = {
   "Timely Delivery": Clock,
 };
 
-export default function WhyChooseUs({ lang }: { lang: Locale }) {
-  const dictionary = getDictionary(lang);
+export default async function WhyChooseUs({ lang }: { lang: Locale }) {
+  const dictionary = await getDictionary(lang);
   const t = dictionary.components.why_choose_us;
 
   const reasons = t.reasons.map(reason => {

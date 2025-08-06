@@ -1,3 +1,4 @@
+import PhotoGallery from '@/components/PhotoGallery';
 import { 
   Building2, 
   Users, 
@@ -20,9 +21,8 @@ type HakkimizdaPageProps = {
   params: { lang: Locale };
 };
 
-const HakkimizdaPage = async ({
-  params: { lang },
-}: HakkimizdaPageProps) => {
+const HakkimizdaPage = async (props: HakkimizdaPageProps) => {
+  const lang = props.params.lang;
   const dictionary = await getDictionary(lang);
   const t = dictionary.page.about;
 
@@ -216,6 +216,9 @@ const HakkimizdaPage = async ({
           </div>
         </div>
       </section>
+
+      {/* Photo Gallery */}
+      <PhotoGallery lang={lang} />
 
       {/* CTA */}
       <section className="py-20 bg-gradient-to-r from-blue-900 to-purple-900">

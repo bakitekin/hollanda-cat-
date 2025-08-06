@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { 
   Hammer, 
   Wrench, 
@@ -15,11 +16,8 @@ import {
 import { getDictionary } from '../../../../get-dictionary';
 import { Locale } from '../../../../i18n-config';
 
-const HizmetlerimizPage = async ({
-  params: { lang },
-}: {
-  params: { lang: Locale };
-}) => {
+const HizmetlerimizPage = async (props: { params: { lang: Locale } }) => {
+  const lang = props.params.lang;
   const dictionary = await getDictionary(lang);
   const t = dictionary.page.services;
 
@@ -31,6 +29,7 @@ const HizmetlerimizPage = async ({
       icon: Hammer,
       features: t.service_list.new_roof.features,
       color: 'from-blue-500 to-blue-700',
+      image: '/images/genel-1.jpeg',
     },
     {
       id: 2,
@@ -39,6 +38,7 @@ const HizmetlerimizPage = async ({
       icon: Wrench,
       features: t.service_list.repair.features,
       color: 'from-green-500 to-green-700',
+      image: '/images/genel-2.jpeg',
     },
     {
       id: 3,
@@ -47,6 +47,7 @@ const HizmetlerimizPage = async ({
       icon: Home,
       features: t.service_list.insulation.features,
       color: 'from-purple-500 to-purple-700',
+      image: '/images/genel-3.jpeg',
     },
     {
       id: 4,
@@ -55,6 +56,7 @@ const HizmetlerimizPage = async ({
       icon: Shield,
       features: t.service_list.waterproofing.features,
       color: 'from-cyan-500 to-cyan-700',
+      image: '/images/genel-10.jpeg',
     },
     {
       id: 5,
@@ -63,6 +65,7 @@ const HizmetlerimizPage = async ({
       icon: Droplets,
       features: t.service_list.gutters.features,
       color: 'from-indigo-500 to-indigo-700',
+      image: '/images/genel-5.jpeg',
     },
     {
       id: 6,
@@ -71,6 +74,7 @@ const HizmetlerimizPage = async ({
       icon: Leaf,
       features: t.service_list.green_roof.features,
       color: 'from-emerald-500 to-emerald-700',
+      image: '/images/genel-6.jpeg',
     }
   ];
 
@@ -121,30 +125,42 @@ const HizmetlerimizPage = async ({
             {services.map((service) => {
               const IconComponent = service.icon;
               return (
-                <div key={service.id} className="group bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700/50 hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-2">
-                  {/* Service Header */}
-                  <div className="text-center mb-6">
-                    <div className={`w-20 h-20 bg-gradient-to-r ${service.color} rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300`}>
-                      <IconComponent className="w-10 h-10 text-white" />
-                    </div>
-                    <h3 className="text-2xl font-bold text-white mb-3">{service.title}</h3>
-                    <p className="text-gray-300 leading-relaxed">{service.description}</p>
+                <div key={service.id} className="group bg-gray-800/50 backdrop-blur-sm rounded-2xl overflow-hidden border border-gray-700/50 hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-2">
+                  <div className="relative h-48 w-full">
+                    <Image
+                      src={service.image}
+                      alt={service.title}
+                      layout="fill"
+                      objectFit="cover"
+                      className="group-hover:scale-105 transition-transform duration-300"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-gray-800/80 to-transparent"></div>
                   </div>
-
-                  {/* Features */}
-                  <div className="space-y-2 mb-6">
-                    {service.features.map((feature, index) => (
-                      <div key={index} className="flex items-center space-x-2">
-                        <CheckCircle className="w-4 h-4 text-green-400" />
-                        <span className="text-gray-300 text-sm">{feature}</span>
+                  <div className="p-8">
+                    {/* Service Header */}
+                    <div className="text-center mb-6">
+                      <div className={`w-20 h-20 bg-gradient-to-r ${service.color} rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 -mt-20 relative z-10 border-4 border-gray-800`}>
+                        <IconComponent className="w-10 h-10 text-white" />
                       </div>
-                    ))}
-                  </div>
+                      <h3 className="text-2xl font-bold text-white mb-3">{service.title}</h3>
+                      <p className="text-gray-300 leading-relaxed">{service.description}</p>
+                    </div>
 
-                  {/* CTA Button */}
-                  <a href={`/${lang}/iletisim`} className="block w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold py-3 px-6 rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300 group-hover:shadow-lg text-center">
-                    {t.grid.button_text}
-                  </a>
+                    {/* Features */}
+                    <div className="space-y-2 mb-6">
+                      {service.features.map((feature, index) => (
+                        <div key={index} className="flex items-center space-x-2">
+                          <CheckCircle className="w-4 h-4 text-green-400" />
+                          <span className="text-gray-300 text-sm">{feature}</span>
+                        </div>
+                      ))}
+                    </div>
+
+                    {/* CTA Button */}
+                    <a href={`/${lang}/iletisim`} className="block w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold py-3 px-6 rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300 group-hover:shadow-lg text-center">
+                      {t.grid.button_text}
+                    </a>
+                  </div>
                 </div>
               );
             })}

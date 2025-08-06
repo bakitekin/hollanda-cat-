@@ -418,6 +418,10 @@
       "quick_links": "Quick Links",
       "contact_us": "Contact Us",
       "follow_us": "Follow Us"
-    }
+   },
+    "photo_gallery": {
+        "title": "Our Reference Projects",
+        "subtitle": "Discover our quality workmanship and completed projects."
+      }
   }
 }

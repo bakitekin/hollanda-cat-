@@ -5,12 +5,8 @@ import { getDictionary } from '../../../get-dictionary';
 import { Locale } from '../../../i18n-config';
 import { MessageCircle, Phone } from 'lucide-react';
 
-const HomePage = async ({
-  params,
-}: {
-  params: { lang: string };
-}) => {
-  const lang = params.lang;
+const HomePage = async (props: { params: { lang: string } }) => {
+  const lang = props.params.lang;
   const dictionary = await getDictionary(lang as Locale);
   const t = dictionary.page.home;
 

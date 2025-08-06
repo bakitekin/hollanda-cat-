@@ -1,5 +1,5 @@
 'use client';
-
+import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 import { 
@@ -51,17 +51,16 @@ export default function Header({ lang, dictionary }: HeaderProps) {
           <Link href={`/${lang}`} className="group relative">
             <div className="flex items-center space-x-3">
               <div className="relative">
-                <div className="w-12 h-12 bg-gradient-to-br from-blue-500 via-purple-500 to-blue-700 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-blue-500/25 transition-all duration-300 group-hover:scale-110 group-hover:rotate-3">
-                  <Building2 className="w-6 h-6 text-white" />
-                </div>
+                <Image
+                  src="/images/logo.svg"
+                  alt="BRK DAK Logo"
+                  width={150}
+                  height={150}
+                  className="group-hover:scale-110 group-hover:rotate-3 transition-all duration-300"
+                />
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-600 rounded-xl blur-lg opacity-0 group-hover:opacity-40 transition-opacity duration-300 -z-10"></div>
               </div>
-              <div className="hidden sm:block">
-                <h1 className="text-2xl font-bold bg-gradient-to-r from-white via-blue-400 to-purple-400 bg-clip-text text-transparent group-hover:from-blue-400 group-hover:to-purple-300 transition-all duration-300">
-                  BRK <span className="text-blue-400">DAK</span>
-                </h1>
-                <p className="text-xs text-gray-400 -mt-1">{t.slogan}</p>
-              </div>
+              
             </div>
           </Link>
 

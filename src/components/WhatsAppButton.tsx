@@ -2,15 +2,12 @@
 
 import { MessageCircle, Phone, X } from 'lucide-react';
 import { useState, useEffect, useRef } from 'react';
-import { Locale } from '../../i18n-config';
-import { getDictionary } from '../../get-dictionary';
 
-export default function WhatsAppButton({ lang }: { lang: Locale }) {
+export default function WhatsAppButton({ dictionary }: { dictionary: any }) {
   const [isExpanded, setIsExpanded] = useState(false);
   const wrapperRef = useRef<HTMLDivElement>(null);
-  
-  const dictionary = getDictionary(lang);
-  const t = dictionary.components.whatsapp_button;
+
+  const t = dictionary;
 
   const phoneNumber = '+31629188688';
   const whatsappNumber = '31629188688';

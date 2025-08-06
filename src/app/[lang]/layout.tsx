@@ -17,22 +17,22 @@ export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }));
 }
 
-export default function RootLayout({
-  children,
-  params,
-}: {
+interface RootLayoutParams {
   children: React.ReactNode;
   params: { lang: Locale };
-}) {
-  const dictionary = getDictionary(params.lang);
+}
+
+export default async function RootLayout(props: RootLayoutParams) {
+  const { children, params } = props;
+  const dictionary = await getDictionary(params.lang);
 
   return (
     <html lang={params.lang}>
       <body className={`${inter.className} bg-gray-900 text-white`}>
         <Header lang={params.lang} dictionary={dictionary.components.header} />
         <main className="flex-grow">{children}</main>
-        <WhatsAppButton lang={params.lang} />
-        <Footer lang={params.lang} />
+        <WhatsAppButton dictionary={dictionary.components.whatsapp_button} />
+        <Footer lang={params.lang} dictionary={{ footer: dictionary.components.footer, header: dictionary.components.header }}/>
       </body>
     </html>
   );

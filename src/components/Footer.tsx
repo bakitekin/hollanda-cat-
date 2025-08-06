@@ -1,13 +1,13 @@
+import Image from 'next/image';
 import React from 'react';
 import { Github, Linkedin, Twitter, Building2, Phone, Mail } from 'lucide-react';
 import Link from 'next/link';
 import { Locale } from '../../i18n-config';
 import { getDictionary } from '../../get-dictionary';
 
-const Footer = ({ lang }: { lang: Locale }) => {
-  const dictionary = getDictionary(lang);
-  const t = dictionary.components.footer;
-  const nav = dictionary.components.header.nav;
+const Footer = async ({ lang, dictionary }: { lang: Locale, dictionary: { footer: any, header: any } }) => {
+  const t = dictionary.footer;
+  const nav = dictionary.header.nav;
 
   const navLinks = [
     { href: '/hizmetlerimiz', label: nav.services },
@@ -24,15 +24,13 @@ const Footer = ({ lang }: { lang: Locale }) => {
           <div className="md:col-span-1">
             <Link href={`/${lang}`} className="group inline-block">
               <div className="flex items-center space-x-3">
-                <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center shadow-lg">
-                  <Building2 className="w-6 h-6 text-white" />
-                </div>
-                <div>
-                  <h1 className="text-2xl font-bold text-white">
-                    BRK <span className="text-blue-400">DAK</span>
-                  </h1>
-                  <p className="text-xs text-gray-400 -mt-1">{dictionary.components.header.slogan}</p>
-                </div>
+                <Image
+                    src="/images/logo.svg"
+                    alt="BRK DAK Logo"
+                    width={150}
+                    height={150}
+                  />
+                
               </div>
             </Link>
           </div>

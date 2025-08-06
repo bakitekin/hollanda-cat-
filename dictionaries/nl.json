@@ -418,6 +418,10 @@
       "quick_links": "Snelle Links",
       "contact_us": "Neem Contact Op",
       "follow_us": "Volg Ons"
-    }
+    },
+    "photo_gallery": {
+        "title": "Onze Referentieprojecten",
+        "subtitle": "Ontdek ons vakmanschap en de projecten die we hebben voltooid."
+      }
   }
 }

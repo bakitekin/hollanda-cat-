@@ -12,8 +12,8 @@ const serviceIcons: { [key: string]: React.ElementType } = {
   "Roof Insulation": Home,
 };
 
-export default function FeaturedServices({ lang }: { lang: Locale }) {
-  const dictionary = getDictionary(lang);
+export default async function FeaturedServices({ lang }: { lang: Locale }) {
+  const dictionary = await getDictionary(lang);
   const t = dictionary.components.featured_services;
 
   const services = t.services.map(service => {

@@ -2,11 +2,8 @@ import { Star, Quote, MapPin, Calendar, CheckCircle, UserCircle, Building, Home,
 import { getDictionary } from '../../../../get-dictionary';
 import { Locale } from '../../../../i18n-config';
 
-const ReferanslarPage = async ({
-  params: { lang },
-}: {
-  params: { lang: Locale };
-}) => {
+const ReferanslarPage = async (props: { params: { lang: Locale } }) => {
+  const lang = props.params.lang;
   const dictionary = await getDictionary(lang);
   const t = dictionary.page.references;
 
