@@ -1,11 +1,29 @@
 import Image from 'next/image';
 import React from 'react';
-import { Github, Linkedin, Twitter, Building2, Phone, Mail } from 'lucide-react';
+import { Github, Linkedin, Twitter, Phone, Mail } from 'lucide-react';
 import Link from 'next/link';
 import { Locale } from '../../i18n-config';
-import { getDictionary } from '../../get-dictionary';
 
-const Footer = async ({ lang, dictionary }: { lang: Locale, dictionary: { footer: any, header: any } }) => {
+interface FooterDictionary {
+  footer: {
+    rights_reserved: string;
+    developed_by: string;
+    quick_links: string;
+    contact_us: string;
+    follow_us: string;
+  };
+  header: {
+    slogan: string;
+    nav: {
+      services: string;
+      about: string;
+      references: string;
+      contact: string;
+    };
+  };
+}
+
+const Footer = async ({ lang, dictionary }: { lang: Locale; dictionary: FooterDictionary }) => {
   const t = dictionary.footer;
   const nav = dictionary.header.nav;
 
@@ -27,8 +45,8 @@ const Footer = async ({ lang, dictionary }: { lang: Locale, dictionary: { footer
                 <Image
                     src="/images/logo.svg"
                     alt="BRK DAK Logo"
-                    width={150}
-                    height={150}
+                    width={200}
+                    height={200}
                   />
                 
               </div>

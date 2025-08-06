@@ -8,8 +8,7 @@ import {
   Star, 
   Phone, 
   Menu, 
-  X,
-  Building2
+  X
 } from 'lucide-react';
 import LocaleSwitcher from './LocaleSwitcher';
 import type { Locale } from '../../i18n-config';
@@ -54,8 +53,8 @@ export default function Header({ lang, dictionary }: HeaderProps) {
                 <Image
                   src="/images/logo.svg"
                   alt="BRK DAK Logo"
-                  width={150}
-                  height={150}
+                  width={200}
+                  height={200}
                   className="group-hover:scale-110 group-hover:rotate-3 transition-all duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-600 rounded-xl blur-lg opacity-0 group-hover:opacity-40 transition-opacity duration-300 -z-10"></div>

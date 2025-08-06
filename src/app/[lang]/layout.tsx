@@ -11,6 +11,9 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata = {
   title: 'BRK DAK',
   description: 'Professionele dakdiensten in Nederland',
+  icons: {
+    icon: '/images/logo.svg',
+  },
 };
 
 export async function generateStaticParams() {

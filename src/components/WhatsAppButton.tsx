@@ -3,7 +3,15 @@
 import { MessageCircle, Phone, X } from 'lucide-react';
 import { useState, useEffect, useRef } from 'react';
 
-export default function WhatsAppButton({ dictionary }: { dictionary: any }) {
+interface WhatsAppButtonDictionary {
+  title: string;
+  owner: string;
+  whatsapp_button: string;
+  call_button: string;
+  emergency_service: string;
+}
+
+export default function WhatsAppButton({ dictionary }: { dictionary: WhatsAppButtonDictionary }) {
   const [isExpanded, setIsExpanded] = useState(false);
   const wrapperRef = useRef<HTMLDivElement>(null);
 
