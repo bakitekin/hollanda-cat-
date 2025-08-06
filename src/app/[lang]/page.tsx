@@ -8,10 +8,10 @@ import { MessageCircle, Phone } from 'lucide-react';
 const HomePage = async ({
   params,
 }: {
-  params: { lang: string };
+  params: { lang: Locale };
 }) => {
   const { lang } = params;
-  const dictionary = await getDictionary(lang as Locale);
+  const dictionary = await getDictionary(lang);
   const t = dictionary.page.home;
 
   const title = t.title.replace(/<1>(.*?)<\/1>/g, '<span class="text-blue-400">$1</span>')
