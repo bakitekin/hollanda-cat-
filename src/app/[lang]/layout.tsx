@@ -30,14 +30,14 @@ export default async function RootLayout({
   const { lang } = params;
   const dictionary = await getDictionary(params.lang);
 
-  return (
-    <html lang={params.lang}>
-      <body className={`${inter.className} bg-gray-900 text-white`}>
-        <Header lang={params.lang} dictionary={dictionary.components.header} />
-        <main className="flex-grow">{children}</main>
-        <WhatsAppButton dictionary={dictionary.components.whatsapp_button} />
-        <Footer lang={params.lang} dictionary={{ footer: dictionary.components.footer, header: dictionary.components.header }}/>
-      </body>
-    </html>
-  );
+    return (
+      <html lang={params.lang} className="scroll-smooth">
+        <body className={`${inter.className} bg-paper text-ink`}>
+          <Header lang={params.lang} dictionary={dictionary.components.header} />
+          <main className="flex-grow">{children}</main>
+          <WhatsAppButton dictionary={dictionary.components.whatsapp_button} />
+          <Footer lang={params.lang} dictionary={{ footer: dictionary.components.footer, header: dictionary.components.header }}/>
+        </body>
+      </html>
+    );
 }

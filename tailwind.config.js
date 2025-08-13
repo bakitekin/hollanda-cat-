@@ -10,6 +10,12 @@ module.exports = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        // Brand palette (light theme)
+        ink: "#151313", // primary text
+        accent: "#346B9E", // primary action (mat mavi)
+        lavender: "#be94f5", // secondary accent
+        sun: "#fccc42", // highlight
+        paper: "#f7f7f5", // surfaces
       },
     },
   },

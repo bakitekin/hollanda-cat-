@@ -4,7 +4,8 @@
       "title": "Reliable and Professional Roofing Solutions in the Netherlands",
       "description": "As BRK DAK, we offer long-lasting and aesthetic roofing services that comply with the harsh climate conditions and high construction standards of the Netherlands. With our experience, use of quality materials, and customer satisfaction-oriented approach, your roof is in safe hands.",
       "whatsapp_button": "Contact via WhatsApp",
-      "call_button": "Call Now"
+        "call_button": "Call Now",
+        "badges": ["Expert Team", "Guaranteed Workmanship", "Free Survey"]
     },
     "about": {
       "hero": {

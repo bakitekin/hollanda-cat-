@@ -34,17 +34,17 @@ export default function LocaleSwitcher() {
 
 
   return (
-    <div className="relative group" ref={wrapperRef}>
+    <div className="relative" ref={wrapperRef}>
       <button 
         onClick={() => setIsMenuOpen(!isMenuOpen)}
-        className="flex items-center space-x-2 text-gray-300 hover:text-blue-400 px-4 py-2 rounded-lg hover:bg-gray-700/50 transition-all duration-300"
+        className="flex items-center space-x-2 text-ink/80 hover:text-ink px-3 py-2 rounded-lg hover:bg-gray-100 border border-gray-200 bg-white/80 transition-all"
       >
-        <Globe className="w-5 h-5" />
+        <Globe className="w-5 h-5 text-accent" />
         <span className="font-medium">{currentLocale === 'nl' ? 'Dutch' : 'English'}</span>
-        <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${isMenuOpen ? 'rotate-180' : ''}`} />
+        <ChevronDown className={`w-4 h-4 transition-transform ${isMenuOpen ? 'rotate-180' : ''}`} />
       </button>
       <div 
-        className={`absolute right-0 mt-2 p-2 w-36 bg-gray-800/95 backdrop-blur-lg rounded-xl border border-gray-700/30 shadow-2xl transition-all duration-300 ${isMenuOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'}`}
+        className={`absolute right-0 mt-2 p-2 w-40 bg-white rounded-xl border border-gray-200 shadow-xl transition-all ${isMenuOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-1'}`}
       >
         <ul>
           {i18n.locales.map(locale => {
@@ -53,7 +53,7 @@ export default function LocaleSwitcher() {
                 <Link
                   href={redirectedPathName(locale)}
                   onClick={() => setIsMenuOpen(false)}
-                  className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700/50 rounded-lg"
+                  className="block px-3 py-2 text-sm text-ink/80 hover:bg-gray-50 rounded-lg"
                 >
                   {locale === 'nl' ? '🇳🇱 Dutch' : '🇬🇧 English'}
                 </Link>

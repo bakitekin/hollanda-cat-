@@ -4,7 +4,8 @@
       "title": "Betrouwbare en <1>Professionele</1> Dakoplossingen in <2>Nederland</2>",
       "description": "Bij BRK DAK bieden we duurzame en esthetische dakdiensten die voldoen aan de strenge Nederlandse klimaateisen en bouwnormen. Met onze ervaring, hoogwaardige materialen en klantgerichte aanpak is uw dak in veilige handen.",
       "whatsapp_button": "Contact via WhatsApp",
-      "call_button": "Bel Nu"
+        "call_button": "Bel Nu",
+        "badges": ["Deskundig Team", "Gegarandeerd Vakmanschap", "Gratis Inspectie"]
     },
     "about": {
       "hero": {

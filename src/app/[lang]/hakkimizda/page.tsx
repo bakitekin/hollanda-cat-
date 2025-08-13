@@ -16,6 +16,8 @@ import {
 } from 'lucide-react';
 import { getDictionary } from '../../../../get-dictionary';
 import { Locale } from '../../../../i18n-config';
+import fs from 'fs';
+import path from 'path';
 
 type HakkimizdaPageProps = {
   params: { lang: Locale };
@@ -85,98 +87,128 @@ const HakkimizdaPage = async ({ params }: HakkimizdaPageProps) => {
     }
   ];
 
+  // Select a hero background image from public images
+  const imagesDir = fs.existsSync(path.join(process.cwd(), 'public/images/burak'))
+    ? path.join(process.cwd(), 'public/images/burak')
+    : path.join(process.cwd(), 'public/images');
+  const heroImage = fs
+    .readdirSync(imagesDir)
+    .filter((f) => /\.(jpe?g|png)$/i.test(f) && !f.toLowerCase().includes('logo'))
+    .sort()[1] || 'genel-2.jpeg';
+  const heroImageUrl = `${imagesDir.endsWith('/burak') ? '/images/burak' : '/images'}/${heroImage}`;
+
   return (
-    <main className="bg-gray-900 text-white min-h-screen pt-24">
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 py-20">
-        <div className="absolute inset-0 bg-black/30"></div>
+    <main className="bg-paper text-ink min-h-screen pt-24">
+      {/* Hero Section (image + gradient) */}
+      <section className="relative py-28 md:py-36 overflow-hidden">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${heroImageUrl})` }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-paper/70 via-paper/70 to-paper"></div>
         <div className="relative container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-              {t.hero.title}
-            </h1>
-            <p className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed">
-              {t.hero.subtitle}
-            </p>
-            <div className="flex items-center justify-center space-x-2 text-blue-400">
-              <MapPin className="w-5 h-5" />
-              <span className="text-lg">{t.hero.location}</span>
+          <div className="max-w-5xl mx-auto text-center">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-ink">{t.hero.title}</h1>
+            <p className="text-lg md:text-2xl text-ink/80 mb-6 leading-relaxed">{t.hero.subtitle}</p>
+            <div className="inline-flex items-center gap-2 bg-white/80 border border-gray-200 rounded-full px-4 py-2">
+              <MapPin className="w-4 h-4 text-accent" />
+              <span className="text-sm md:text-base font-medium">{t.hero.location}</span>
             </div>
           </div>
         </div>
       </section>
 
       {/* Stats Section */}
-      <section className="py-20 bg-gray-800">
+      <section className="py-16 bg-paper">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {stats.map((stat, index) => {
-              const IconComponent = stat.icon;
-              return (
-                <div key={index} className="text-center group">
-                  <div className="bg-gradient-to-br from-blue-600 to-purple-600 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <IconComponent className="w-8 h-8 text-white" />
+          <div className="max-w-5xl mx-auto">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 place-items-center text-center">
+              {stats.map((stat, index) => {
+                const IconComponent = stat.icon;
+                return (
+                  <div key={index} className="flex flex-col items-center">
+                    <div className="w-14 h-14 rounded-2xl bg-accent/10 text-accent flex items-center justify-center mb-3">
+                      <IconComponent className="w-7 h-7" />
+                    </div>
+                    <div className="text-3xl md:text-4xl font-bold text-ink leading-none">{stat.number}</div>
+                    <div className="text-ink/60 text-sm md:text-base mt-1">{stat.label}</div>
                   </div>
-                  <div className="text-3xl md:text-4xl font-bold text-white mb-2">{stat.number}</div>
-                  <div className="text-gray-300">{stat.label}</div>
-                </div>
-              );
-            })}
+                );
+              })}
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Mission & Vision */}
-      <section className="py-20 bg-gradient-to-b from-gray-800 to-gray-900">
+      {/* Mission & Vision (cards) */}
+      <section className="py-20 bg-paper">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Mission */}
-            <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700/50">
-              <div className="text-center mb-6">
-                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                  <Target className="w-8 h-8 text-white" />
+            <div className="bg-white rounded-2xl p-8 border border-gray-200">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-12 h-12 bg-accent rounded-xl flex items-center justify-center">
+                  <Target className="w-6 h-6 text-white" />
                 </div>
-                <h2 className="text-3xl font-bold text-white mb-4">{t.mission_vision.mission.title}</h2>
+                <h2 className="text-2xl font-bold text-ink">{t.mission_vision.mission.title}</h2>
               </div>
-              <p className="text-gray-300 leading-relaxed text-lg">
-                {t.mission_vision.mission.description}
-              </p>
+              <p className="text-ink/70 leading-relaxed text-base md:text-lg">{t.mission_vision.mission.description}</p>
             </div>
 
             {/* Vision */}
-            <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700/50">
-              <div className="text-center mb-6">
-                <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-700 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                  <Rocket className="w-8 h-8 text-white" />
+            <div className="bg-white rounded-2xl p-8 border border-gray-200">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-12 h-12 bg-lavender rounded-xl flex items-center justify-center">
+                  <Rocket className="w-6 h-6 text-ink" />
                 </div>
-                <h2 className="text-3xl font-bold text-white mb-4">{t.mission_vision.vision.title}</h2>
+                <h2 className="text-2xl font-bold text-ink">{t.mission_vision.vision.title}</h2>
               </div>
-              <p className="text-gray-300 leading-relaxed text-lg">
-                {t.mission_vision.vision.description}
-              </p>
+              <p className="text-ink/70 leading-relaxed text-base md:text-lg">{t.mission_vision.vision.description}</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Values */}
-      <section className="py-20 bg-gray-900">
+      {/* Milestones Timeline (built from stats) */}
+      <section className="py-16 bg-paper">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <ol className="relative border-s border-gray-200">
+              {stats.map((stat, idx) => {
+                const IconComponent = stat.icon;
+                return (
+                  <li key={idx} className="mb-10 ms-6">
+                    <span className="absolute -start-3 flex h-6 w-6 items-center justify-center rounded-full bg-accent text-white ring-8 ring-accent/10">
+                      <IconComponent className="w-3.5 h-3.5" />
+                    </span>
+                    <h3 className="text-lg font-semibold text-ink">{stat.label}</h3>
+                    <p className="text-ink/60 text-sm">{stat.number}</p>
+                  </li>
+                );
+              })}
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      {/* Values (scrollable on mobile) */}
+      <section className="py-20 bg-paper">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-4">{t.values.title}</h2>
-            <p className="text-xl text-gray-300">{t.values.subtitle}</p>
+            <h2 className="text-4xl font-bold text-ink mb-4">{t.values.title}</h2>
+            <p className="text-xl text-ink/70">{t.values.subtitle}</p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 overflow-x-auto lg:overflow-visible snap-x">
             {values.map((value, index) => {
               const IconComponent = value.icon;
               return (
-                <div key={index} className="group text-center">
-                  <div className={`w-20 h-20 bg-gradient-to-r ${value.color} rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                    <IconComponent className="w-8 h-8 text-white" />
+                <div key={index} className="group text-center snap-center">
+                  <div className={`w-20 h-20 ${index % 2 === 0 ? 'bg-accent' : 'bg-lavender'} rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300`}>
+                    <IconComponent className={`w-8 h-8 ${index % 2 === 0 ? 'text-white' : 'text-ink'}`} />
                   </div>
-                  <h3 className="text-xl font-bold text-white mb-4">{value.title}</h3>
-                  <p className="text-gray-300 leading-relaxed">{value.description}</p>
+                  <h3 className="text-xl font-bold text-ink mb-2">{value.title}</h3>
+                  <p className="text-ink/70 leading-relaxed text-sm md:text-base">{value.description}</p>
                 </div>
               );
             })}
@@ -184,27 +216,32 @@ const HakkimizdaPage = async ({ params }: HakkimizdaPageProps) => {
         </div>
       </section>
 
-      {/* Team */}
-      <section className="py-20 bg-gradient-to-b from-gray-900 to-gray-800">
+      {/* Team (cards with gradient header) */}
+      <section className="py-20 bg-paper">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-4">{t.team.title}</h2>
-            <p className="text-xl text-gray-300">{t.team.subtitle}</p>
+            <h2 className="text-4xl font-bold text-ink mb-4">{t.team.title}</h2>
+            <p className="text-xl text-ink/70">{t.team.subtitle}</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {team.map((member, index) => (
-              <div key={index} className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700/50 text-center group hover:-translate-y-2 transition-all duration-300">
-                <div className="text-6xl mb-4">{member.emoji}</div>
-                <h3 className="text-2xl font-bold text-white mb-2">{member.name}</h3>
-                <p className="text-blue-400 font-semibold mb-2">{member.role}</p>
-                <p className="text-gray-400 text-sm mb-4">{member.experience}</p>
-                <p className="text-gray-300 mb-4">{member.description}</p>
+              <div key={index} className="bg-white rounded-2xl border border-gray-200 text-center group hover:-translate-y-2 transition-all duration-300 overflow-hidden">
+                <div className={`h-24 ${index % 2 === 0 ? 'bg-accent' : 'bg-lavender'}`}></div>
+                <div className="-mt-10 mx-auto w-20 h-20 rounded-2xl bg-paper border border-gray-200 flex items-center justify-center text-4xl">
+                  {member.emoji}
+                </div>
+                <div className="p-6">
+                  <h3 className="text-2xl font-bold text-ink mb-1">{member.name}</h3>
+                  <p className="text-accent font-semibold mb-1">{member.role}</p>
+                  <p className="text-ink/60 text-sm mb-3">{member.experience}</p>
+                  <p className="text-ink/70 mb-4">{member.description}</p>
+                </div>
                 {member.phone && (
-                  <div className="mt-4 pt-4 border-t border-gray-700">
+                  <div className="mt-4 pt-4 border-t border-gray-200">
                     <a 
                       href={`tel:${member.phone.replace(/\s/g, '')}`}
-                      className="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-300 inline-flex items-center space-x-2"
+                      className="bg-accent hover:brightness-95 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-300 inline-flex items-center space-x-2"
                     >
                       <Phone className="w-4 h-4" />
                       <span>{member.phone}</span>
@@ -221,13 +258,13 @@ const HakkimizdaPage = async ({ params }: HakkimizdaPageProps) => {
       <PhotoGallery lang={lang} />
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-to-r from-blue-900 to-purple-900">
+      <section className="py-20 bg-paper">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold text-white mb-6">{t.cta.title}</h2>
-          <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
+          <h2 className="text-4xl font-bold text-ink mb-6">{t.cta.title}</h2>
+          <p className="text-xl text-ink/70 mb-8 max-w-2xl mx-auto">
             {t.cta.subtitle}
           </p>
-          <a href={`/${lang}/iletisim`} className="inline-block bg-white text-blue-900 font-bold py-4 px-8 rounded-xl hover:bg-gray-100 transition-colors duration-300">
+          <a href={`/${lang}/iletisim`} className="inline-block bg-accent text-white font-bold py-4 px-8 rounded-xl hover:brightness-95 transition-colors duration-300">
             <Handshake className="inline-block w-5 h-5 mr-2" />
             {t.cta.button}
           </a>

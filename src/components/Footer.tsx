@@ -35,7 +35,7 @@ const Footer = async ({ lang, dictionary }: { lang: Locale; dictionary: FooterDi
   ];
 
   return (
-    <footer className="bg-gray-900 border-t border-gray-700/20 text-gray-300">
+    <footer className="bg-paper border-t border-gray-200 text-ink/70">
       <div className="container mx-auto px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand Section */}
@@ -55,11 +55,11 @@ const Footer = async ({ lang, dictionary }: { lang: Locale; dictionary: FooterDi
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-semibold text-white mb-4">{t.quick_links}</h3>
+            <h3 className="text-lg font-semibold text-ink mb-4">{t.quick_links}</h3>
             <ul className="space-y-2">
               {navLinks.map((link) => (
                 <li key={link.href}>
-                  <Link href={`/${lang}${link.href}`} className="hover:text-blue-400 transition-colors duration-300">
+                  <Link href={`/${lang}${link.href}`} className="hover:text-accent transition-colors duration-200">
                     {link.label}
                   </Link>
                 </li>
@@ -69,30 +69,30 @@ const Footer = async ({ lang, dictionary }: { lang: Locale; dictionary: FooterDi
 
           {/* Contact Us */}
           <div>
-            <h3 className="text-lg font-semibold text-white mb-4">{t.contact_us}</h3>
+            <h3 className="text-lg font-semibold text-ink mb-4">{t.contact_us}</h3>
             <ul className="space-y-2">
               <li className="flex items-center space-x-2">
                 <Phone className="w-4 h-4 text-blue-400" />
-                <a href="tel:+31629188688" className="hover:text-blue-400 transition-colors duration-300">+31 6 29188688</a>
+                <a href="tel:+31629188688" className="hover:text-accent transition-colors duration-200">+31 6 29188688</a>
               </li>
               <li className="flex items-center space-x-2">
                 <Mail className="w-4 h-4 text-blue-400" />
-                <a href="mailto:brkdak.nl@gmail.com" className="hover:text-blue-400 transition-colors duration-300">brkdak.nl@gmail.com</a>
+                <a href="mailto:brkdak.nl@gmail.com" className="hover:text-accent transition-colors duration-200">brkdak.nl@gmail.com</a>
               </li>
             </ul>
           </div>
 
           {/* Follow Us */}
           <div>
-            <h3 className="text-lg font-semibold text-white mb-4">{t.follow_us}</h3>
+            <h3 className="text-lg font-semibold text-ink mb-4">{t.follow_us}</h3>
             <div className="flex space-x-4">
-              <a href="https://github.com/bakitekin" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors duration-300">
+              <a href="https://github.com/bakitekin" target="_blank" rel="noopener noreferrer" className="text-ink/40 hover:text-ink transition-colors duration-200">
                 <Github className="w-6 h-6" />
               </a>
-              <a href="https://www.linkedin.com/in/tekinbaki/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors duration-300">
+              <a href="https://www.linkedin.com/in/tekinbaki/" target="_blank" rel="noopener noreferrer" className="text-ink/40 hover:text-ink transition-colors duration-200">
                 <Linkedin className="w-6 h-6" />
               </a>
-              <a href="https://x.com/Fx_SoldieRR" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors duration-300">
+              <a href="https://x.com/Fx_SoldieRR" target="_blank" rel="noopener noreferrer" className="text-ink/40 hover:text-ink transition-colors duration-200">
                 <Twitter className="w-6 h-6" />
               </a>
             </div>
@@ -100,9 +100,9 @@ const Footer = async ({ lang, dictionary }: { lang: Locale; dictionary: FooterDi
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-12 pt-8 border-t border-gray-700/50 text-center text-sm">
+        <div className="mt-12 pt-8 border-t border-gray-200 text-center text-sm">
           <p className="mb-2">&copy; {new Date().getFullYear()} BRK DAK. {t.rights_reserved}</p>
-          <p>{t.developed_by} <a href="https://x.com/Fx_SoldieRR" target="_blank" rel="noopener noreferrer" className="font-semibold text-white hover:text-blue-400 transition-colors duration-300">Baki TEKİN</a></p>
+          <p>{t.developed_by} <a href="https://x.com/Fx_SoldieRR" target="_blank" rel="noopener noreferrer" className="font-semibold text-ink hover:text-accent transition-colors duration-200">Baki TEKİN</a></p>
         </div>
       </div>
     </footer>

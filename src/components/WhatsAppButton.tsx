@@ -54,17 +54,17 @@ export default function WhatsAppButton({ dictionary }: { dictionary: WhatsAppBut
             onClick={() => setIsExpanded(false)}
           ></div>
           
-          <div className="absolute bottom-16 right-0 bg-gray-800/95 backdrop-blur-sm rounded-2xl p-4 shadow-2xl border border-gray-700/50 mb-4 min-w-[280px]">
+          <div className="absolute bottom-16 right-0 bg-paper/95 backdrop-blur-sm rounded-2xl p-4 shadow-2xl border border-gray-200 mb-4 min-w-[280px]">
             <div className="text-center mb-4">
-              <h3 className="text-white font-bold text-lg">{t.title}</h3>
-              <p className="text-gray-300 text-sm">{t.owner}</p>
-              <p className="text-blue-400 font-semibold">{phoneNumber}</p>
+              <h3 className="text-ink font-bold text-lg">{t.title}</h3>
+              <p className="text-ink/70 text-sm">{t.owner}</p>
+              <p className="text-accent font-semibold">{phoneNumber}</p>
             </div>
             
             <div className="space-y-2">
               <button
                 onClick={handleWhatsAppClick}
-                className="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-4 rounded-xl transition-all duration-300 flex items-center justify-center space-x-2"
+                className="w-full bg-accent hover:brightness-95 text-white font-semibold py-3 px-4 rounded-xl transition-all duration-300 flex items-center justify-center space-x-2"
               >
                 <MessageCircle className="w-5 h-5" />
                 <span>{t.whatsapp_button}</span>
@@ -72,7 +72,7 @@ export default function WhatsAppButton({ dictionary }: { dictionary: WhatsAppBut
               
               <button
                 onClick={handlePhoneClick}
-                className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-4 rounded-xl transition-all duration-300 flex items-center justify-center space-x-2"
+                className="w-full bg-lavender hover:brightness-95 text-ink font-semibold py-3 px-4 rounded-xl transition-all duration-300 flex items-center justify-center space-x-2"
               >
                 <Phone className="w-5 h-5" />
                 <span>{t.call_button}</span>
@@ -88,13 +88,13 @@ export default function WhatsAppButton({ dictionary }: { dictionary: WhatsAppBut
       
       <button
         onClick={toggleExpanded}
-        className="bg-green-600 hover:bg-green-700 text-white p-4 rounded-full shadow-2xl transition-all duration-300 hover:scale-110 group relative"
+        className="bg-accent hover:brightness-95 text-white p-4 rounded-full shadow-2xl transition-all duration-300 hover:scale-110 group relative"
       >
         {isExpanded ? <X className="w-8 h-8" /> : <MessageCircle className="w-8 h-8" />}
         
         {!isExpanded && (
           <>
-            <div className="absolute inset-0 bg-green-600 rounded-full animate-ping opacity-20"></div>
+            <div className="absolute inset-0 bg-accent rounded-full animate-ping opacity-20"></div>
             <div className="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center font-bold">
               !
             </div>

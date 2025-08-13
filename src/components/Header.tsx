@@ -36,7 +36,6 @@ export default function Header({ lang, dictionary }: HeaderProps) {
     { href: '/hizmetlerimiz', label: t.nav.services, icon: Wrench },
     { href: '/hakkimizda', label: t.nav.about, icon: Users },
     { href: '/referanslar', label: t.nav.references, icon: Star },
-    { href: '/iletisim', label: t.nav.contact, icon: Phone }
   ];
 
   const mobileNavLinks = [
@@ -44,7 +43,7 @@ export default function Header({ lang, dictionary }: HeaderProps) {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-gray-900/95 backdrop-blur-xl border-b border-gray-700/20 shadow-lg">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-paper/90 backdrop-blur-md border-b border-gray-200">
       <nav className="container mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
           <Link href={`/${lang}`} className="group relative">
@@ -55,9 +54,9 @@ export default function Header({ lang, dictionary }: HeaderProps) {
                   alt="BRK DAK Logo"
                   width={200}
                   height={200}
-                  className="group-hover:scale-110 group-hover:rotate-3 transition-all duration-300"
+                  className="transition-transform duration-300"
                 />
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-600 rounded-xl blur-lg opacity-0 group-hover:opacity-40 transition-opacity duration-300 -z-10"></div>
+                <div className="hidden"></div>
               </div>
               
             </div>
@@ -70,51 +69,49 @@ export default function Header({ lang, dictionary }: HeaderProps) {
                 <Link 
                   key={item.href}
                   href={`/${lang}${item.href}`} 
-                  className="group relative px-4 py-2 text-gray-300 hover:text-blue-400 font-medium transition-all duration-300"
+              className="px-4 py-2 text-ink/80 hover:text-ink font-medium transition-colors duration-200"
                 >
                   <div className="flex items-center space-x-2">
-                    <IconComponent className="w-4 h-4 group-hover:scale-110 transition-transform duration-300" />
+                    <IconComponent className="w-4 h-4" />
                     <span>{item.label}</span>
                   </div>
-                  <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 group-hover:w-full transition-all duration-300"></div>
-                  <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-300 -z-10"></div>
                 </Link>
               );
             })}
             
-            <div className="w-px h-6 bg-gray-700 mx-4"></div>
-
             <LocaleSwitcher />
 
           </div>
 
           <div className="flex items-center lg:hidden">
-            <LocaleSwitcher />
             <button 
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="ml-4 relative w-10 h-10 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center text-white shadow-lg hover:shadow-blue-500/25 transition-all duration-300 hover:scale-110"
+              className="ml-4 relative w-10 h-10 bg-white rounded-lg flex items-center justify-center text-gray-900 border border-gray-200"
             >
               {isMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
             </button>
           </div>
         </div>
 
-        <div className={`lg:hidden mt-4 transition-all duration-300 ${isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
-          <div className="bg-gray-800/90 backdrop-blur-lg rounded-2xl border border-gray-700/30 p-6 space-y-4">
+          <div className={`lg:hidden mt-4 transition-all duration-300 ${isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
+          <div className="bg-paper rounded-2xl border border-gray-200 p-6 space-y-4">
             {mobileNavLinks.map((item) => {
               const IconComponent = item.icon;
               return (
                 <Link 
                   key={item.href}
-                  href={item.href}
+                  href={`/${lang}${item.href}`}
                   onClick={() => setIsMenuOpen(false)}
-                  className="group flex items-center space-x-3 p-3 text-gray-300 hover:text-blue-400 font-medium rounded-xl hover:bg-gray-700/30 transition-all duration-300"
+                  className="flex items-center space-x-3 p-3 text-gray-700 hover:text-gray-900 font-medium rounded-xl hover:bg-gray-50 transition-colors duration-200"
                 >
-                  <IconComponent className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
+                  <IconComponent className="w-5 h-5" />
                   <span>{item.label}</span>
                 </Link>
               );
             })}
+            <div className="p-3">
+              <LocaleSwitcher />
+            </div>
           </div>
         </div>
       </nav>

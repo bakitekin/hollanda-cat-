@@ -1,6 +1,10 @@
 import React from 'react';
 import FeaturedServices from '@/components/FeaturedServices';
 import WhyChooseUs from '@/components/WhyChooseUs';
+import PhotoGallery from '@/components/PhotoGallery';
+import HeroSlider from '@/components/HeroSlider';
+import fs from 'fs';
+import path from 'path';
 import { getDictionary } from '../../../get-dictionary';
 import { Locale } from '../../../i18n-config';
 import { MessageCircle, Phone } from 'lucide-react';
@@ -14,34 +18,45 @@ const HomePage = async ({
   const dictionary = await getDictionary(lang);
   const t = dictionary.page.home;
 
-  const title = t.title.replace(/<1>(.*?)<\/1>/g, '<span class="text-blue-400">$1</span>')
-                       .replace(/<2>(.*?)<\/2>/g, '<br class="hidden md:block" /><span class="text-blue-400">$1</span>');
+  const title = t.title
+    .replace(/<1>(.*?)<\/1>/g, '<span class="text-blue-400">$1</span>')
+    .replace(/<2>(.*?)<\/2>/g, '<br class="hidden md:block" /><span class="text-blue-400">$1</span>');
+
+  const burakDir = path.join(process.cwd(), 'public/images/burak');
+  const defaultDir = path.join(process.cwd(), 'public/images');
+  const useBurak = fs.existsSync(burakDir);
+  const dirToUse = useBurak ? burakDir : defaultDir;
+  const heroImages = fs
+    .readdirSync(dirToUse)
+    .filter((f) => /\.(jpe?g|png)$/i.test(f) && !f.toLowerCase().includes('logo'))
+    .sort()
+    .slice(0, 6)
+    .map((f) => `${useBurak ? '/images/burak' : '/images'}/${f}`);
 
   return (
     <>
-      <div className="relative bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 text-white py-32 px-4 mt-20">
-        <div className="absolute inset-0 bg-black/20"></div>
-        <div className="relative container mx-auto text-center">
-          <h1 
-            className="text-5xl md:text-6xl font-bold mb-6 leading-tight"
-            dangerouslySetInnerHTML={{ __html: title }}
-          />
-          <p className="text-xl md:text-2xl text-gray-200 mb-8 max-w-4xl mx-auto leading-relaxed">
-            {t.description}
-          </p>
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href={`https://wa.me/31629188688?text=${encodeURIComponent('Merhaba! BRK DAK çatı hizmetleri hakkında bilgi almak istiyorum.')}`} target="_blank" className="bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center space-x-2">
-              <MessageCircle className="w-6 h-6" />
-              <span>{t.whatsapp_button}</span>
-            </a>
-            <a href="tel:+31629188688" className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center space-x-2">
-              <Phone className="w-6 h-6" />
-              <span>{t.call_button}</span>
-            </a>
+      <HeroSlider
+        images={heroImages}
+        titleHtml={title}
+        description={t.description}
+        whatsappText={t.whatsapp_button}
+        callText={t.call_button}
+        badges={t.badges}
+      />
+
+      {/* About teaser */}
+      <section className="bg-paper py-12">
+        <div className="container mx-auto px-4">
+          <div className="bg-white border border-gray-200 rounded-2xl p-6 md:p-10 flex flex-col md:flex-row items-start md:items-center gap-6">
+            <div className="flex-1">
+              <h3 className="text-2xl font-bold text-ink mb-2">{dictionary.page.about.team.title}</h3>
+              <p className="text-ink/70 max-w-3xl">{dictionary.page.about.team.subtitle}</p>
+            </div>
+            <a href={`/${lang}/hakkimizda`} className="inline-flex items-center justify-center bg-accent text-white font-semibold py-3 px-6 rounded-lg hover:brightness-95 transition-all duration-200">{dictionary.components.header.nav.about}</a>
           </div>
         </div>
-      </div>
+      </section>
+      <PhotoGallery lang={lang} />
       <FeaturedServices lang={lang} />
       <WhyChooseUs lang={lang} />
     </>
