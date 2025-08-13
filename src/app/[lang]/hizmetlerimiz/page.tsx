@@ -44,7 +44,7 @@ const HizmetlerimizPage = async ({
       icon: Wrench,
       features: t.service_list.repair.features,
       color: 'from-green-500 to-green-700',
-      image: '/images/genel-2.jpeg',
+      image: '/images/genel-1.jpeg',
     },
     {
       id: 3,
@@ -53,34 +53,7 @@ const HizmetlerimizPage = async ({
       icon: Home,
       features: t.service_list.insulation.features,
       color: 'from-purple-500 to-purple-700',
-      image: '/images/genel-3.jpeg',
-    },
-    {
-      id: 4,
-      title: t.service_list.waterproofing.title,
-      description: t.service_list.waterproofing.description,
-      icon: Shield,
-      features: t.service_list.waterproofing.features,
-      color: 'from-cyan-500 to-cyan-700',
-      image: '/images/genel-10.jpeg',
-    },
-    {
-      id: 5,
-      title: t.service_list.gutters.title,
-      description: t.service_list.gutters.description,
-      icon: Droplets,
-      features: t.service_list.gutters.features,
-      color: 'from-indigo-500 to-indigo-700',
-      image: '/images/genel-5.jpeg',
-    },
-    {
-      id: 6,
-      title: t.service_list.green_roof.title,
-      description: t.service_list.green_roof.description,
-      icon: Leaf,
-      features: t.service_list.green_roof.features,
-      color: 'from-emerald-500 to-emerald-700',
-      image: '/images/genel-6.jpeg',
+      image: '/images/genel-1.jpeg',
     }
   ];
 
@@ -91,7 +64,7 @@ const HizmetlerimizPage = async ({
     { icon: Star, text: t.why_choose_us.satisfaction, color: 'text-yellow-400' }
   ];
 
-  const navItems = services.slice(0, 6).map((s) => ({ id: s.title.toLowerCase().replace(/[^a-z0-9]+/gi, '-'), label: s.title }));
+  const navItems = services.map((s) => ({ id: s.title.toLowerCase().replace(/[^a-z0-9]+/gi, '-'), label: s.title }));
 
   return (
     <main className="bg-paper text-ink min-h-screen pt-24">

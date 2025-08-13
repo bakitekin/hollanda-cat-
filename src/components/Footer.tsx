@@ -45,10 +45,10 @@ const Footer = async ({ lang, dictionary }: { lang: Locale; dictionary: FooterDi
                 <Image
                     src="/images/logo.svg"
                     alt="BRK DAK Logo"
-                    width={200}
-                    height={200}
+                    width={56}
+                    height={56}
+                    className="h-14 w-auto"
                   />
-                
               </div>
             </Link>
           </div>

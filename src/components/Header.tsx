@@ -52,13 +52,11 @@ export default function Header({ lang, dictionary }: HeaderProps) {
                 <Image
                   src="/images/logo.svg"
                   alt="BRK DAK Logo"
-                  width={200}
-                  height={200}
-                  className="transition-transform duration-300"
+                  width={44}
+                  height={44}
+                  className="h-11 w-auto"
                 />
-                <div className="hidden"></div>
               </div>
-              
             </div>
           </Link>
 

@@ -2,7 +2,7 @@
   "page": {
     "home": {
       "title": "Betrouwbare en <1>Professionele</1> Dakoplossingen in <2>Nederland</2>",
-      "description": "Bij BRK DAK bieden we duurzame en esthetische dakdiensten die voldoen aan de strenge Nederlandse klimaateisen en bouwnormen. Met onze ervaring, hoogwaardige materialen en klantgerichte aanpak is uw dak in veilige handen.",
+        "description": "BRK DAK is een dakdekkersbedrijf gevestigd in Almere. Wij zijn gespecialiseerd in platte daken: dakbedekking, reparatie, isolatie en onderhoud. Ons doel is om elke klant professionele, tijdige en betrouwbare service te bieden. Wij werken met precisie, ervaring en vakmanschap aan elk project.",
       "whatsapp_button": "Contact via WhatsApp",
         "call_button": "Bel Nu",
         "badges": ["Deskundig Team", "Gegarandeerd Vakmanschap", "Gratis Inspectie"]
@@ -95,19 +95,24 @@
       },
       "service_list": {
         "new_roof": {
-          "title": "Nieuwbouw Dak",
-          "description": "Wij bouwen esthetische en duurzame daken die bestand zijn tegen de strenge Nederlandse klimaatomstandigheden, met een moderne architectonische benadering.",
-          "features": ["20+ Jaar Garantie", "Premium Materialen", "Snelle Installatie", "3D Ontwerp"]
+          "title": "Dakrenovatie",
+          "description": "Is uw dak aan vernieuwing toe? Wij verwijderen oude dakbedekking en brengen een nieuwe, duurzame bitumineuze laag aan met brander voor maximale bescherming en waterdichtheid.",
+          "features": ["Duurzame Bitumenlaag", "Gebrand Aangebracht", "Maximale Waterdichtheid", "Lange Levensduur"]
         },
         "repair": {
-          "title": "Dak Reparatie en Onderhoud",
-          "description": "24/7 spoedservice voor waterlekken, stormschade, gebroken pannen en allerlei dakproblemen.",
-          "features": ["24/7 Spoedservice", "Gratis Inspectie", "Snelle Oplossing", "Verzekeringsondersteuning"]
+          "title": "Dakoreparatie",
+          "description": "Wij repareren lekkende, beschadigde of versleten daken snel en effectief. Lekkages, scheuren en beschadigde delen worden geïnspecteerd en ter plekke gerepareerd.",
+          "features": ["Lekkage Detectie", "Snelle Reparatie ter Plaatse", "Vervanging indien Nodig", "Herstelt Functionaliteit"]
         },
         "insulation": {
-          "title": "Dakisolatie",
-          "description": "Professionele isolatieoplossingen die de energie-efficiëntie verhogen en uw stookkosten tot 40% verlagen.",
-          "features": ["40% Energiebesparing", "Milieuvriendelijk", "Geluidsisolatie", "Ademend Systeem"]
+          "title": "Dakonderhoud",
+          "description": "Regelmatig onderhoud verlengt de levensduur van uw dak. Wij voeren seizoens- of jaarlijkse inspecties uit, voeren schoonmaak en kleine reparaties uit om grotere problemen te voorkomen.",
+          "features": ["Seizoens-/Jaarlijkse Inspectie", "Reiniging", "Kleine Reparaties", "Voorkomt Grote Kosten"]
+        },
+        "inspection": {
+          "title": "Inspectie",
+          "description": "Laat uw dak regelmatig inspecteren om vroegtijdig problemen te detecteren. Wij bieden professionele dakinspectie met advies om de levensduur van uw dak te maximaliseren.",
+          "features": ["Professioneel Rapport", "Vroegtijdige Detectie", "Praktisch Advies", "Focus op Veiligheid"]
         },
         "waterproofing": {
           "title": "Waterdichting",
@@ -254,7 +259,7 @@
         "button": "Vraag nu een Offerte aan"
       }
     },
-    "contact": {
+      "contact": {
       "hero": {
         "title": "Contact",
         "subtitle": "Wij staan 24/7 voor u klaar voor uw dakbehoeften"
@@ -273,8 +278,8 @@
           "icon": "Phone",
           "title": "Telefoon",
           "subtitle": "Directe communicatie",
-          "link": "tel:+31629188688",
-          "link_text": "+31 6 29188688",
+            "link": "tel:+31629188688",
+            "link_text": "+31 629188688",
           "color": "from-blue-500 to-blue-700",
           "link_color": "text-blue-400"
         },
@@ -291,15 +296,15 @@
           "icon": "Mail",
           "title": "E-mail",
           "subtitle": "Gedetailleerde informatie",
-          "link": "mailto:brkdak.nl@gmail.com",
-          "link_text": "brkdak.nl@gmail.com",
+            "link": "mailto:info@brkdak.nl",
+            "link_text": "info@brkdak.nl",
           "color": "from-purple-500 to-purple-700",
           "link_color": "text-purple-400"
         },
         {
           "icon": "Clock",
           "title": "Werktijden",
-          "subtitle": "Ma - Vr: 08:00-18:00\nZa: 09:00-16:00",
+            "subtitle": "Ma - Vr: 08:00-18:00\nZa: 09:00-15:00",
           "link": "#",
           "link_text": "Spoed: 24/7",
           "color": "from-yellow-500 to-yellow-700",
@@ -307,13 +312,13 @@
         }
       ],
       "service_areas": {
-        "title": "Onze Servicegebieden",
-        "subtitle": "Kwalitatieve dakdiensten in heel Nederland",
+          "title": "Onze Servicegebieden",
+          "subtitle": "Kwalitatieve dakdiensten in heel Nederland",
         "cities": [
           "Amsterdam", "Rotterdam", "Den Haag"
         ],
-        "footer_text_part1": "Woont u in een niet-vermelde regio?",
-        "footer_text_part2": "Bel ons!"
+          "footer_text_part1": "Adres:",
+          "footer_text_part2": "Almere, Flevoland – Nederland"
       },
       "emergency": {
         "title": "Spoeddiensten",

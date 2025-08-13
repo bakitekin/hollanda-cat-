@@ -1,12 +1,12 @@
 {
   "page": {
-    "home": {
-      "title": "Reliable and Professional Roofing Solutions in the Netherlands",
-      "description": "As BRK DAK, we offer long-lasting and aesthetic roofing services that comply with the harsh climate conditions and high construction standards of the Netherlands. With our experience, use of quality materials, and customer satisfaction-oriented approach, your roof is in safe hands.",
-      "whatsapp_button": "Contact via WhatsApp",
+      "home": {
+        "title": "Reliable and Professional Roofing Solutions in the Netherlands",
+        "description": "We are an Almere-based roofing company. We specialize in flat roofs: covering, repair, insulation and maintenance. Our goal is to deliver quality, on-time and reliable service to every customer. We approach every project with care, experience and craftsmanship.",
+        "whatsapp_button": "Contact via WhatsApp",
         "call_button": "Call Now",
         "badges": ["Expert Team", "Guaranteed Workmanship", "Free Survey"]
-    },
+      },
     "about": {
       "hero": {
         "title": "The BRK DAK Story",
@@ -95,19 +95,24 @@
       },
       "service_list": {
         "new_roof": {
-          "title": "New Roof Construction",
-          "description": "We build aesthetic and long-lasting roofs resistant to the harsh climate conditions of the Netherlands with a modern architectural approach.",
-          "features": ["20+ Year Warranty", "Premium Materials", "Fast Installation", "3D Design"]
+          "title": "Roof Renovation",
+          "description": "If your roof needs renewal, we remove the old covering and install a durable bituminous layer using torch-on application for maximum protection and waterproofing.",
+          "features": ["Durable Bitumen Layer", "Torch-Applied", "Maximum Waterproofing", "Long-Lasting Protection"]
         },
         "repair": {
-          "title": "Roof Repair and Maintenance",
-          "description": "24/7 emergency response service for water leaks, storm damage, broken tiles, and all kinds of roof problems.",
-          "features": ["24/7 Emergency Service", "Free Survey", "Quick Solution", "Insurance Support"]
+          "title": "Roof Repair",
+          "description": "We repair leaking, damaged or worn roofs quickly and effectively. We inspect leaks, cracks and worn areas and fix them on site.",
+          "features": ["Leak Detection", "On-site Quick Repair", "Part Replacement if Needed", "Restores Functionality"]
         },
         "insulation": {
-          "title": "Roof Insulation",
-          "description": "Professional insulation solutions that increase energy efficiency and reduce your heating costs by up to 40%.",
-          "features": ["40% Energy Savings", "Eco-Friendly", "Sound Insulation", "Breathable System"]
+          "title": "Roof Maintenance",
+          "description": "Regular maintenance extends the life of your roof. We perform seasonal or annual inspections, cleaning and minor repairs to prevent bigger problems.",
+          "features": ["Seasonal/Annual Inspection", "Cleaning", "Minor Repairs", "Prevents Major Costs"]
+        },
+        "inspection": {
+          "title": "Roof Inspection",
+          "description": "Have your roof inspected regularly to detect problems early. We provide professional inspection with clear advice to maximize lifespan.",
+          "features": ["Professional Report", "Early Problem Detection", "Actionable Advice", "Safety Focused"]
         },
         "waterproofing": {
           "title": "Waterproofing",
@@ -254,7 +259,7 @@
         "button": "Get a Quote Now"
       }
     },
-    "contact": {
+      "contact": {
       "hero": {
         "title": "Contact",
         "subtitle": "We are ready to serve you 24/7 for your roofing needs"
@@ -262,19 +267,19 @@
       "owner_highlight": {
         "name": "Burak Uğur",
         "role": "Founder & CEO",
-        "experience": "Personal service with 6+ years of experience",
+          "experience": "Personal service with 6+ years of experience",
         "call_button_subtext": "Direct phone call",
         "whatsapp_button_text": "WhatsApp Message",
         "whatsapp_button_subtext": "Instant response guaranteed",
-        "whatsapp_message": "Hello Burak! I would like to get information about BRK DAK roofing services."
+          "whatsapp_message": "Hello Burak! I would like to get information about BRK DAK roofing services."
       },
-      "contact_methods": [
+        "contact_methods": [
         {
           "icon": "Phone",
           "title": "Phone",
           "subtitle": "Instant communication",
-          "link": "tel:+31629188688",
-          "link_text": "+31 6 29188688",
+            "link": "tel:+31629188688",
+            "link_text": "+31 629188688",
           "color": "from-blue-500 to-blue-700",
           "link_color": "text-blue-400"
         },
@@ -282,7 +287,7 @@
           "icon": "MessageCircle",
           "title": "WhatsApp",
           "subtitle": "Fast messaging",
-          "link": "https://wa.me/31629188688",
+            "link": "https://wa.me/31629188688",
           "link_text": "Send Message",
           "color": "from-green-500 to-green-700",
           "link_color": "text-green-400"
@@ -291,15 +296,15 @@
           "icon": "Mail",
           "title": "E-mail",
           "subtitle": "Detailed information",
-          "link": "mailto:brkdak.nl@gmail.com",
-          "link_text": "brkdak.nl@gmail.com",
+            "link": "mailto:info@brkdak.nl",
+            "link_text": "info@brkdak.nl",
           "color": "from-purple-500 to-purple-700",
           "link_color": "text-purple-400"
         },
         {
           "icon": "Clock",
-          "title": "Working Hours",
-          "subtitle": "Mon - Fri: 08:00-18:00\nSat: 09:00-16:00",
+            "title": "Working Hours",
+            "subtitle": "Mon - Fri: 08:00-18:00\nSat: 09:00-15:00",
           "link": "#",
           "link_text": "Emergency: 24/7",
           "color": "from-yellow-500 to-yellow-700",
@@ -307,13 +312,13 @@
         }
       ],
       "service_areas": {
-        "title": "Our Service Areas",
-        "subtitle": "Quality roofing services throughout the Netherlands",
+          "title": "Our Service Areas",
+          "subtitle": "Quality roofing services throughout the Netherlands",
         "cities": [
           "Amsterdam", "Rotterdam", "Den Haag"
         ],
-        "footer_text_part1": "Living in an unlisted area?",
-        "footer_text_part2": "Call us!"
+          "footer_text_part1": "Address:",
+          "footer_text_part2": "Almere, Flevoland – Netherlands"
       },
       "emergency": {
         "title": "Emergency Services",

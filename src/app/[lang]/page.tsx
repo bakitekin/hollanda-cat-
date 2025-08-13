@@ -56,7 +56,6 @@ const HomePage = async ({
           </div>
         </div>
       </section>
-      <PhotoGallery lang={lang} />
       <FeaturedServices lang={lang} />
       <WhyChooseUs lang={lang} />
     </>
