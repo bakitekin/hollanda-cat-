@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Logo from './Logo';
 import React from 'react';
 import { Github, Linkedin, Twitter, Phone, Mail } from 'lucide-react';
 import Link from 'next/link';
@@ -42,13 +43,7 @@ const Footer = async ({ lang, dictionary }: { lang: Locale; dictionary: FooterDi
           <div className="md:col-span-1">
             <Link href={`/${lang}`} className="group inline-block">
               <div className="flex items-center space-x-3">
-                <Image
-                    src="/images/logo.svg"
-                    alt="BRK DAK Logo"
-                    width={56}
-                    height={56}
-                    className="h-14 w-auto"
-                  />
+                <Logo className="h-16 w-auto md:h-20" />
               </div>
             </Link>
           </div>

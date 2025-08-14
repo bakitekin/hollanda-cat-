@@ -1,7 +1,7 @@
 'use client';
-import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
+import Logo from './Logo';
 import { 
   Wrench, 
   Users, 
@@ -49,13 +49,7 @@ export default function Header({ lang, dictionary }: HeaderProps) {
           <Link href={`/${lang}`} className="group relative">
             <div className="flex items-center space-x-3">
               <div className="relative">
-                <Image
-                  src="/images/logo.svg"
-                  alt="BRK DAK Logo"
-                  width={44}
-                  height={44}
-                  className="h-11 w-auto"
-                />
+                <Logo className="h-12 w-auto md:h-14" />
               </div>
             </div>
           </Link>

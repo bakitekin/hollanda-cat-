@@ -1,4 +1,3 @@
-import PhotoGallery from '@/components/PhotoGallery';
 import { 
   Building2, 
   Users, 
@@ -118,27 +117,7 @@ const HakkimizdaPage = async ({ params }: HakkimizdaPageProps) => {
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="py-16 bg-paper">
-        <div className="container mx-auto px-4">
-          <div className="max-w-5xl mx-auto">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 place-items-center text-center">
-              {stats.map((stat, index) => {
-                const IconComponent = stat.icon;
-                return (
-                  <div key={index} className="flex flex-col items-center">
-                    <div className="w-14 h-14 rounded-2xl bg-accent/10 text-accent flex items-center justify-center mb-3">
-                      <IconComponent className="w-7 h-7" />
-                    </div>
-                    <div className="text-3xl md:text-4xl font-bold text-ink leading-none">{stat.number}</div>
-                    <div className="text-ink/60 text-sm md:text-base mt-1">{stat.label}</div>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Stats Section removed as requested */}
 
       {/* Mission & Vision (cards) */}
       <section className="py-20 bg-paper">
@@ -254,8 +233,7 @@ const HakkimizdaPage = async ({ params }: HakkimizdaPageProps) => {
         </div>
       </section>
 
-      {/* Photo Gallery */}
-      <PhotoGallery lang={lang} />
+      {/* Photo Gallery removed on About page as requested */}
 
       {/* CTA */}
       <section className="py-20 bg-paper">

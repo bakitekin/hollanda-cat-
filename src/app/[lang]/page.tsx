@@ -1,7 +1,6 @@
 import React from 'react';
 import FeaturedServices from '@/components/FeaturedServices';
 import WhyChooseUs from '@/components/WhyChooseUs';
-import PhotoGallery from '@/components/PhotoGallery';
 import HeroSlider from '@/components/HeroSlider';
 import fs from 'fs';
 import path from 'path';

@@ -37,6 +37,14 @@ export default async function FeaturedServices({ lang }: { lang: Locale }) {
     .filter((f) => /\.(jpe?g|png)$/i.test(f) && !f.toLowerCase().includes('logo'))
     .slice(0, services.length);
 
+  // Özel görsel eşlemeleri: başlığa göre override
+  const serviceImageOverrides: Record<string, string> = {
+    // EN
+    'Roof Insulation': '/images/genel-15.jpeg',
+    // NL
+    'Dakisolatie': '/images/genel-15.jpeg',
+  };
+
   return (
     <section className="py-16 bg-paper">
       <div className="container mx-auto px-4">
@@ -51,10 +59,15 @@ export default async function FeaturedServices({ lang }: { lang: Locale }) {
             const imageUrl = imageFile
               ? `${useBurak ? '/images/burak' : '/images'}/${imageFile}`
               : '/images/genel-1.jpeg';
+            const overrideRel = serviceImageOverrides[service.title];
+            const overrideAbs = overrideRel
+              ? path.join(process.cwd(), 'public', overrideRel.replace(/^\//, ''))
+              : null;
+            const finalImageUrl = overrideAbs && fs.existsSync(overrideAbs) ? overrideRel : imageUrl;
             return (
               <div key={index} className="bg-white rounded-xl overflow-hidden border border-gray-200">
-                <div className="relative h-40 w-full">
-                  <Image src={imageUrl} alt={service.title} fill className="object-cover" />
+                <div className="relative h-56 md:h-64 w-full">
+                  <Image src={finalImageUrl} alt={service.title} fill className="object-cover" />
                   <div className="absolute inset-0 bg-black/10" />
                 </div>
                 <div className="p-6">

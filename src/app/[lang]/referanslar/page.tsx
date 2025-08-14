@@ -1,4 +1,5 @@
 import { Star, Quote, MapPin, Calendar, CheckCircle, UserCircle, Building, Home, Trophy, Shield, FileText, Zap, MessageCircle, Phone, Mail, Clock } from 'lucide-react';
+import PhotoGallery from '@/components/PhotoGallery';
 import fs from 'fs';
 import path from 'path';
 import { getDictionary } from '../../../../get-dictionary';
@@ -175,6 +176,9 @@ const ReferanslarPage = async ({
           </div>
         </div>
       </section>
+
+      {/* Photo Gallery (References) */}
+      <PhotoGallery lang={lang} />
 
       {/* Trust Indicators */}
       <section className="py-20 bg-paper">
