@@ -66,7 +66,7 @@ export default async function FeaturedServices({ lang }: { lang: Locale }) {
             const finalImageUrl = overrideAbs && fs.existsSync(overrideAbs) ? overrideRel : imageUrl;
             return (
               <div key={index} className="bg-white rounded-xl overflow-hidden border border-gray-200">
-                <div className="relative h-56 md:h-64 w-full">
+                <div className="relative h-64 md:h-80 w-full">
                   <Image src={finalImageUrl} alt={service.title} fill className="object-cover" />
                   <div className="absolute inset-0 bg-black/10" />
                 </div>

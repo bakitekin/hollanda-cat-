@@ -35,30 +35,32 @@ export default function HeroSlider({ images, titleHtml, description, whatsappTex
             style={{ backgroundImage: `url(${src})` }}
           />
         ))}
-        <div className="absolute inset-0 bg-paper/40"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-black/10"></div>
       </div>
 
       {/* Content */}
       <div className="relative container mx-auto text-center">
-        <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight" dangerouslySetInnerHTML={{ __html: titleHtml }} />
-        <p className="text-lg md:text-xl text-ink/70 mb-8 max-w-3xl mx-auto leading-relaxed">{description}</p>
+        <div className="inline-block mx-auto bg-black/40 backdrop-blur-sm rounded-2xl border border-white/10 px-6 py-6">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight text-white drop-shadow" dangerouslySetInnerHTML={{ __html: titleHtml }} />
+          <p className="text-lg md:text-xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed drop-shadow">{description}</p>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a
-            href={`https://wa.me/31629188688?text=${encodeURIComponent('Merhaba! BRK DAK çatı hizmetleri hakkında bilgi almak istiyorum.')}`}
-            target="_blank"
-            className="bg-accent hover:brightness-95 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-200 flex items-center justify-center space-x-2"
-          >
-            <MessageCircle className="w-6 h-6" />
-            <span>{whatsappText}</span>
-          </a>
-          <a
-            href="tel:+31629188688"
-            className="bg-lavender hover:brightness-95 text-ink font-bold py-4 px-8 rounded-lg text-lg transition-all duration-200 flex items-center justify-center space-x-2"
-          >
-            <Phone className="w-6 h-6" />
-            <span>{callText}</span>
-          </a>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href={`https://wa.me/31629188688?text=${encodeURIComponent('Merhaba! BRK DAK çatı hizmetleri hakkında bilgi almak istiyorum.')}`}
+              target="_blank"
+              className="bg-accent hover:brightness-95 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-200 flex items-center justify-center space-x-2 drop-shadow"
+            >
+              <MessageCircle className="w-6 h-6" />
+              <span>{whatsappText}</span>
+            </a>
+            <a
+              href="tel:+31629188688"
+              className="bg-lavender hover:brightness-95 text-ink font-bold py-4 px-8 rounded-lg text-lg transition-all duration-200 flex items-center justify-center space-x-2 drop-shadow"
+            >
+              <Phone className="w-6 h-6" />
+              <span>{callText}</span>
+            </a>
+          </div>
         </div>
 
         {badges && badges.length > 0 && (

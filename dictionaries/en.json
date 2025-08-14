@@ -156,9 +156,9 @@
         {
           "id": 1,
           "name": "Maria van der Berg",
-          "location": "Amsterdam",
+          "location": "Almere",
           "rating": 5,
-          "date": "December 2024",
+          "date": "March 2025",
           "service": "Roof Repair",
           "comment": "The BRK.DAK team solved the water leak problem on my roof very quickly. Thanks for their professional approach and quality workmanship.",
           "avatar": ""
@@ -166,9 +166,9 @@
         {
           "id": 2,
           "name": "Jan Koevoets",
-          "location": "Rotterdam",
+          "location": "Lelystad",
           "rating": 5,
-          "date": "November 2024",
+          "date": "February 2025",
           "service": "New Roof Construction",
           "comment": "We had our house's roof completely redone. Timely delivery, clean work, and excellent results. I definitely recommend them.",
           "avatar": ""
@@ -176,9 +176,9 @@
         {
           "id": 3,
           "name": "Sarah Johnson",
-          "location": "Amsterdam",
+          "location": "Zeewolde",
           "rating": 5,
-          "date": "October 2024",
+          "date": "January 2025",
           "service": "Roof Insulation",
           "comment": "My heating bills were cut in half after the insulation work. It's both an eco-friendly and economical solution.",
           "avatar": ""
@@ -186,9 +186,9 @@
         {
           "id": 4,
           "name": "Piet Janssen",
-          "location": "Den Haag",
+          "location": "Almere",
           "rating": 5,
-          "date": "September 2024",
+          "date": "December 2024",
           "service": "Gutter Systems",
           "comment": "The 24/7 emergency service really exists. They had solved the problem that occurred in the middle of the night by the morning. Great service!",
           "avatar": ""
@@ -196,9 +196,9 @@
         {
           "id": 5,
           "name": "Lisa van Dijk",
-          "location": "Rotterdam",
+          "location": "Lelystad",
           "rating": 5,
-          "date": "August 2024",
+          "date": "November 2024",
           "service": "Waterproofing",
           "comment": "They did a very detailed survey and explained the whole process step by step. Transparent pricing and quality materials.",
           "avatar": ""
@@ -206,9 +206,9 @@
         {
           "id": 6,
           "name": "Mohamed Al-Rashid",
-          "location": "Den Haag",
+          "location": "Almere",
           "rating": 5,
-          "date": "July 2024",
+          "date": "October 2024",
           "service": "Green Roof",
           "comment": "We had a green roof installed for sustainable living. It's both aesthetic and eco-friendly. Excellent project management.",
           "avatar": ""
