@@ -12,12 +12,20 @@ const PhotoGallery = async ({ lang }: { lang: Locale }) => {
   const burakDirectory = path.join(process.cwd(), 'public/images/burak');
   const defaultDirectory = path.join(process.cwd(), 'public/images');
 
-  const baseDirectory = fs.existsSync(burakDirectory) ? burakDirectory : defaultDirectory;
-  const imageFilenames = fs
-    .readdirSync(baseDirectory)
-    .filter((file) => /\.(jpe?g|png|gif)$/i.test(file) && !file.toLowerCase().includes('logo'));
+  const collectImages = (dir: string, prefix: string) =>
+    fs
+      .readdirSync(dir)
+      .filter((file) => /\.(jpe?g|png|gif)$/i.test(file) && !file.toLowerCase().includes('logo'))
+      .map((filename) => `${prefix}/${filename}`);
 
-  const images = imageFilenames.map((filename) => `${baseDirectory.endsWith('/burak') ? '/images/burak' : '/images'}/${filename}`);
+  const hasBurak = fs.existsSync(burakDirectory);
+  const hasRoot = fs.existsSync(defaultDirectory);
+
+  const burakImages = hasBurak ? collectImages(burakDirectory, '/images/burak') : [];
+  const rootImages = hasRoot ? collectImages(defaultDirectory, '/images') : [];
+
+  // Her iki klasördeki görselleri birleştir, tekrarları kaldır
+  const images = Array.from(new Set([...burakImages, ...rootImages]));
 
   const GalleryClient = dynamic(() => import('./GalleryClient'), { ssr: false });
 
