@@ -82,6 +82,9 @@ const ReferanslarPage = async ({
         </div>
       </section>
 
+      {/* Photo Gallery (References) - Moved Up */}
+      <PhotoGallery lang={lang} />
+
       {/* Customer Testimonials */}
       <section className="py-20 bg-paper">
         <div className="container mx-auto px-4">
@@ -176,9 +179,6 @@ const ReferanslarPage = async ({
           </div>
         </div>
       </section>
-
-      {/* Photo Gallery (References) */}
-      <PhotoGallery lang={lang} />
 
       {/* Trust Indicators */}
       <section className="py-20 bg-paper">

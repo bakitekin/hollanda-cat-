@@ -156,9 +156,9 @@
         {
           "id": 1,
           "name": "Maria van der Berg",
-          "location": "Amsterdam",
+          "location": "Almere",
           "rating": 5,
-          "date": "December 2024",
+          "date": "Maart 2025",
           "service": "Dak Reparatie",
           "comment": "Het team van BRK.DAK heeft het waterlekprobleem op mijn dak zeer snel opgelost. Bedankt voor hun professionele aanpak en kwalitatief vakmanschap.",
           "avatar": ""
@@ -166,9 +166,9 @@
         {
           "id": 2,
           "name": "Jan Koevoets",
-          "location": "Rotterdam",
+          "location": "Lelystad",
           "rating": 5,
-          "date": "November 2024",
+          "date": "Februari 2025",
           "service": "Nieuwbouw Dak",
           "comment": "We hebben het dak van ons huis volledig laten vernieuwen. Tijdige levering, schoon werk en uitstekende resultaten. Ik raad ze zeker aan.",
           "avatar": ""
@@ -176,9 +176,9 @@
         {
           "id": 3,
           "name": "Sarah Johnson",
-          "location": "Amsterdam",
+          "location": "Zeewolde",
           "rating": 5,
-          "date": "Oktober 2024",
+          "date": "Januari 2025",
           "service": "Dakisolatie",
           "comment": "Mijn stookkosten zijn na de isolatiewerkzaamheden gehalveerd. Het is zowel een milieuvriendelijke als een economische oplossing.",
           "avatar": ""
@@ -186,9 +186,9 @@
         {
           "id": 4,
           "name": "Piet Janssen",
-          "location": "Den Haag",
+          "location": "Almere",
           "rating": 5,
-          "date": "September 2024",
+          "date": "December 2024",
           "service": "Dakgootsystemen",
           "comment": "De 24/7 spoedservice bestaat echt. Ze hadden het probleem dat midden in de nacht was ontstaan 's ochtends opgelost. Geweldige service!",
           "avatar": ""
@@ -196,9 +196,9 @@
         {
           "id": 5,
           "name": "Lisa van Dijk",
-          "location": "Rotterdam",
+          "location": "Lelystad",
           "rating": 5,
-          "date": "Augustus 2024",
+          "date": "November 2024",
           "service": "Waterdichting",
           "comment": "Ze hebben een zeer gedetailleerde inspectie uitgevoerd en het hele proces stap voor stap uitgelegd. Transparante prijzen en hoogwaardige materialen.",
           "avatar": ""
@@ -206,9 +206,9 @@
         {
           "id": 6,
           "name": "Mohamed Al-Rashid",
-          "location": "Den Haag",
+          "location": "Almere",
           "rating": 5,
-          "date": "Juli 2024",
+          "date": "Oktober 2024",
           "service": "Groendak",
           "comment": "We hebben een groendak laten aanleggen voor duurzaam wonen. Het is zowel esthetisch als milieuvriendelijk. Uitstekend projectmanagement.",
           "avatar": ""

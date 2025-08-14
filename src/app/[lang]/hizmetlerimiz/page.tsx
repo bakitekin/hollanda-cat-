@@ -35,7 +35,7 @@ const HizmetlerimizPage = async ({
       icon: Hammer,
       features: t.service_list.new_roof.features,
       color: 'from-blue-500 to-blue-700',
-      image: '/images/genel-12.jpeg',
+      image: '/images/genel-10.jpeg',
     },
     {
       id: 2,
@@ -44,7 +44,7 @@ const HizmetlerimizPage = async ({
       icon: Wrench,
       features: t.service_list.repair.features,
       color: 'from-green-500 to-green-700',
-      image: '/images/genel-11.jpeg',
+      image: '/images/genel-8.jpeg',
     },
     {
       id: 3,
@@ -53,7 +53,7 @@ const HizmetlerimizPage = async ({
       icon: Home,
       features: t.service_list.insulation.features,
       color: 'from-purple-500 to-purple-700',
-      image: '/images/genel-15.jpeg',
+      image: '/images/genel-1.jpeg',
     }
   ];
 
@@ -110,7 +110,7 @@ const HizmetlerimizPage = async ({
               const IconComponent = service.icon;
               return (
                 <div key={service.id} id={service.title.toLowerCase().replace(/[^a-z0-9]+/gi, '-')} className="group bg-white rounded-2xl overflow-hidden border border-gray-200 hover:border-accent/50 transition-all duration-300 hover:-translate-y-2">
-                  <div className="relative h-56 md:h-64 w-full">
+                  <div className="relative h-64 md:h-80 w-full">
                     <Image
                       src={service.image}
                       alt={service.title}

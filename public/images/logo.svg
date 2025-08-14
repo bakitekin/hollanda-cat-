@@ -82,6 +82,6 @@
 	<polygon fill="#346B9E" points="161.26,0 125.06,26.43 88.87,0 0,64.9 0,114.26 21.84,114.26 21.84,76 88.87,27.04 106.54,39.96 
 		72.39,64.9 72.39,114.26 94.23,114.26 94.23,76 161.26,27.04 198.25,27.02 	"/>
     <text x="175" y="115" fill="#346B9E" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="72" font-weight="700" letter-spacing="-1">BRK DAK</text>
-    <text x="185" y="145" fill="#346B9E" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="26" font-weight="600">İNSPECTIE & ADVIES</text>
+    <text x="185" y="145" fill="#346B9E" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="26" font-weight="600">INSPECTIE & ADVIES</text>
 </g>
 </svg>

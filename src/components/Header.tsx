@@ -1,6 +1,7 @@
 'use client';
 import Link from 'next/link';
 import { useState } from 'react';
+import { usePathname } from 'next/navigation';
 import Logo from './Logo';
 import { 
   Wrench, 
@@ -31,6 +32,12 @@ type HeaderProps = {
 export default function Header({ lang, dictionary }: HeaderProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const t = dictionary;
+  const pathname = usePathname();
+
+  const isActiveLink = (href: string) => {
+    const target = `/${lang}${href}`;
+    return pathname === target || pathname.startsWith(`${target}`);
+  };
 
   const navLinks = [
     { href: '/hizmetlerimiz', label: t.nav.services, icon: Wrench },
@@ -61,10 +68,10 @@ export default function Header({ lang, dictionary }: HeaderProps) {
                 <Link 
                   key={item.href}
                   href={`/${lang}${item.href}`} 
-              className="px-4 py-2 text-ink/80 hover:text-ink font-medium transition-colors duration-200"
+              className={`px-4 py-2 font-medium transition-colors duration-200 ${isActiveLink(item.href) ? 'text-accent' : 'text-ink/80 hover:text-ink'}`}
                 >
                   <div className="flex items-center space-x-2">
-                    <IconComponent className="w-4 h-4" />
+                    <IconComponent className={`w-4 h-4 ${isActiveLink(item.href) ? 'text-accent' : ''}`} />
                     <span>{item.label}</span>
                   </div>
                 </Link>
@@ -94,9 +101,9 @@ export default function Header({ lang, dictionary }: HeaderProps) {
                   key={item.href}
                   href={`/${lang}${item.href}`}
                   onClick={() => setIsMenuOpen(false)}
-                  className="flex items-center space-x-3 p-3 text-gray-700 hover:text-gray-900 font-medium rounded-xl hover:bg-gray-50 transition-colors duration-200"
+                  className={`flex items-center space-x-3 p-3 font-medium rounded-xl transition-colors duration-200 ${isActiveLink(item.href) ? 'bg-accent/10 text-accent' : 'text-gray-700 hover:text-gray-900 hover:bg-gray-50'}`}
                 >
-                  <IconComponent className="w-5 h-5" />
+                  <IconComponent className={`w-5 h-5 ${isActiveLink(item.href) ? 'text-accent' : ''}`} />
                   <span>{item.label}</span>
                 </Link>
               );
