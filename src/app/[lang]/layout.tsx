@@ -35,7 +35,10 @@ export default async function RootLayout({
         <body className={`${inter.className} bg-paper text-ink`}>
           <Header lang={params.lang} dictionary={dictionary.components.header} />
           <main className="flex-grow">{children}</main>
-          <WhatsAppButton dictionary={dictionary.components.whatsapp_button} />
+          <WhatsAppButton 
+            dictionary={dictionary.components.whatsapp_button}
+            message={lang === 'nl' ? 'Hallo! Ik wil graag informatie over de dakdiensten van BRK DAK.' : 'Merhaba! BRK DAK çatı hizmetleri hakkında bilgi almak istiyorum.'}
+          />
           <Footer lang={params.lang} dictionary={{ footer: dictionary.components.footer, header: dictionary.components.header }}/>
         </body>
       </html>

@@ -11,7 +11,7 @@ interface WhatsAppButtonDictionary {
   emergency_service: string;
 }
 
-export default function WhatsAppButton({ dictionary }: { dictionary: WhatsAppButtonDictionary }) {
+export default function WhatsAppButton({ dictionary, message }: { dictionary: WhatsAppButtonDictionary; message: string }) {
   const [isExpanded, setIsExpanded] = useState(false);
   const wrapperRef = useRef<HTMLDivElement>(null);
 
@@ -21,8 +21,8 @@ export default function WhatsAppButton({ dictionary }: { dictionary: WhatsAppBut
   const whatsappNumber = '31629188688';
   
   const handleWhatsAppClick = () => {
-    const message = encodeURIComponent('Merhaba! BRK DAK çatı hizmetleri hakkında bilgi almak istiyorum.');
-    window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
+    const encoded = encodeURIComponent(message || 'Merhaba! BRK DAK çatı hizmetleri hakkında bilgi almak istiyorum.');
+    window.open(`https://wa.me/${whatsappNumber}?text=${encoded}`, '_blank');
   };
   
   const handlePhoneClick = () => {
