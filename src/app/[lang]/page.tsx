@@ -6,7 +6,7 @@ import fs from 'fs';
 import path from 'path';
 import { getDictionary } from '../../../get-dictionary';
 import { Locale } from '../../../i18n-config';
-import { MessageCircle, Phone } from 'lucide-react';
+import { MessageCircle, Phone, Mail } from 'lucide-react';
 
 const HomePage = async ({
   params,
@@ -41,6 +41,8 @@ const HomePage = async ({
         whatsappText={t.whatsapp_button}
         callText={t.call_button}
         badges={t.badges}
+        emailText={dictionary.page.contact.contact_methods[2].link_text}
+        emailHref={dictionary.page.contact.contact_methods[2].link}
       />
 
       {/* About teaser */}

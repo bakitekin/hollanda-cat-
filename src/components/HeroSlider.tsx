@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useMemo, useState } from 'react';
-import { MessageCircle, Phone } from 'lucide-react';
+import { MessageCircle, Phone, Mail } from 'lucide-react';
 
 type HeroSliderProps = {
   images: string[];
@@ -10,9 +10,11 @@ type HeroSliderProps = {
   whatsappText: string;
   callText: string;
   badges?: string[];
+  emailText: string;
+  emailHref: string;
 };
 
-export default function HeroSlider({ images, titleHtml, description, whatsappText, callText, badges }: HeroSliderProps) {
+export default function HeroSlider({ images, titleHtml, description, whatsappText, callText, badges, emailText, emailHref }: HeroSliderProps) {
   const safeImages = useMemo(() => (images && images.length > 0 ? images : ['/images/genel-1.jpeg']), [images]);
   const [index, setIndex] = useState(0);
 
@@ -42,7 +44,7 @@ export default function HeroSlider({ images, titleHtml, description, whatsappTex
       <div className="relative container mx-auto text-center">
         <div className="inline-block mx-auto bg-black/40 backdrop-blur-sm rounded-2xl border border-white/10 px-6 py-6">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight text-white drop-shadow" dangerouslySetInnerHTML={{ __html: titleHtml }} />
-          <p className="text-lg md:text-xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed drop-shadow">{description}</p>
+          <p className="text-lg md:text-xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed drop-shadow whitespace-pre-line">{description}</p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
@@ -59,6 +61,13 @@ export default function HeroSlider({ images, titleHtml, description, whatsappTex
             >
               <Phone className="w-6 h-6" />
               <span>{callText}</span>
+            </a>
+            <a
+              href={emailHref}
+              className="bg-white hover:brightness-95 text-ink font-bold py-4 px-8 rounded-lg text-lg transition-all duration-200 flex items-center justify-center space-x-2 drop-shadow border border-gray-200"
+            >
+              <Mail className="w-6 h-6" />
+              <span>{emailText}</span>
             </a>
           </div>
         </div>

@@ -2,7 +2,7 @@
   "page": {
       "home": {
         "title": "Reliable and Professional Roofing Solutions in the Netherlands",
-        "description": "We are an Almere-based roofing company. We specialize in flat roofs: covering, repair, insulation and maintenance. Our goal is to deliver quality, on-time and reliable service to every customer. We approach every project with care, experience and craftsmanship.",
+        "description": "We are an Almere-based roofing company.\nWe specialize in flat roofs: covering, repair, insulation and maintenance.\nOur goal is to deliver quality, on-time and reliable service to every customer.\nWe approach every project with care, experience and craftsmanship.",
         "whatsapp_button": "Contact via WhatsApp",
         "call_button": "Call Now",
         "badges": ["Expert Team", "Guaranteed Workmanship", "Free Survey"]
@@ -296,8 +296,8 @@
           "icon": "Mail",
           "title": "E-mail",
           "subtitle": "Detailed information",
-            "link": "mailto:info@brkdak.nl",
-            "link_text": "info@brkdak.nl",
+            "link": "mailto:brkdak.nl@gmail.com",
+            "link_text": "brkdak.nl@gmail.com",
           "color": "from-purple-500 to-purple-700",
           "link_color": "text-purple-400"
         },
